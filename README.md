@@ -1,8 +1,4 @@
 # About
 
-This site is built with the following technologies
- - 
-
-# Developing this Site
-
-First clone the repository.
+This is the repo for Newsong's new site.
+ -
