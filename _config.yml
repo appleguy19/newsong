@@ -10,13 +10,13 @@ title: Newsong
 
 description: > # this means to ignore newlines until "baseurl:"
   Following the way of Jesus, in authentic community, for the good of the world.
-baseurl: /newsong
+baseurl: /newsong-web
 url: http://jakeapple.com
 
 # About/Contact
 author:
 name:    Jake Apple
-email:    jakeapple@gmail.com
+email:    jake@jakeapple.com
 twitter_username:    appleguy
 github_username:    appleguy19
 
@@ -24,13 +24,3 @@ github_username:    appleguy19
 markdown:    kramdown
 kramdown:
   input: GFM
-
-
-# Ministries
-collections:
-  kc:
-    output: true
-  epic:
-    output: true
-  people:
-    output: true
