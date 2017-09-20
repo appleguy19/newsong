@@ -1,0 +1,25 @@
+Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Newsong Fellowship
+description: > # this means to ignore newlines until "baseurl:"
+  A church in Edwardsville, IL where we're trying to follow the way of Jesus, in authentic community, for the good of the world.
+baseurl: /newsong
+url: http://jakeapple.com
+
+# About/Contact
+author:
+name:    Jake Apple
+email:    jakeapple@gmail.com
+twitter_username:    appleguy
+github_username:    appleguy19
+
+# Build settings
+markdown:    kramdown
+kramdown:
+  input: GFM
