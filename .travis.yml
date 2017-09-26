@@ -7,7 +7,9 @@ rvm:
 install:
   - gem install jekyll
   - yarn
-script: jekyll build
+script:
+  - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external
 
 # branch whitelist, only for GitHub Pages
 branches:
