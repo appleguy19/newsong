@@ -5,10 +5,10 @@ rvm:
 # Assume bundler is being used, therefore
 # the `install` step will run `bundle install` by default.
 install:
-  - bundle install
+  - gem install jekyll
   - yarn
 script:
-  - bundle exec jekyll build
+  - jekyll build
 
 # branch whitelist, only for GitHub Pages
 branches:
