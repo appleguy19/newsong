@@ -1,0 +1,16 @@
+{
+  "name": "newsong-website",
+  "version": "1.0",
+  "description": "A church in Edwardsville, IL where we're trying to follow the way of Jesus, in authentic community, for the good of the world.",
+  "main": "index.html",
+  "repository": "https://github.com/appleguy19/newsong.git",
+  "author": "Jake Apple <jake.apple@secondstreet.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.6",
+    "popper.js": "^1.12.5"
+  }
+}
