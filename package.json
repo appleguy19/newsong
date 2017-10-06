@@ -1,0 +1,19 @@
+{
+  "name": "newsong",
+  "version": "0.1",
+  "main": "index.html",
+  "repository": "https://github.com/appleguy19/newsong.git",
+  "author": "Jake Apple <jake@jakeapple.com>",
+  "license": "UNLICENSED",
+  "private": false,
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"yarn run build-css\""
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "bulma": "^0.5.3",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1"
+  }
+}
