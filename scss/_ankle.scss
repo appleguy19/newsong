@@ -1,0 +1,38 @@
+.ankle  {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  @media (min-width: $widescreen) {
+    & .hero-head .container {
+      padding-left: 18rem;
+      padding-right: 18rem;
+    }
+
+    & .hero-body .container {
+      padding-left: 14rem;
+      padding-right: 14rem;
+    }
+
+    & .ankle-links p:not(:last-child) {
+      &:after {
+        content: '\00B7';
+        font-size: 2rem;
+        line-height: 1;
+        position: relative;
+        left: 25%;
+      }
+    }
+  }
+
+  .ankle-links a:hover {
+    color: $primary;
+  }
+
+  .ankle-logo {
+    margin-bottom: 3rem;
+  }
+
+  .ankle-cta {
+    margin-top: 2rem;
+  }
+}
