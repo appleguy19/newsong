@@ -6185,7 +6185,6 @@ label.panel-block {
       height: auto; } }
 
 .learn-more--right {
-  background-size: cover;
   display: block; }
   @media screen and (min-width: 769px), print {
     .learn-more--right {
@@ -6234,8 +6233,10 @@ label.panel-block {
   border-width: 2px; }
 
 .has-bg-image {
-  background-attachment: fixed;
   background-color: #303030;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (min-width: 769px), print {
+    .has-bg-image--fixed {
+      background-attachment: fixed; } }
