@@ -1,0 +1,69 @@
+.splash-head {
+  padding: 1.5rem;
+
+  &--address {
+    p {
+      border-bottom: 2px solid $white;
+      padding: 1rem;
+    }
+
+    @include tablet {
+      justify-content:flex-end;
+
+      p {
+        padding: inherit 1rem inherit inherit;
+        border-bottom: none;
+        border-right: 2px solid $white;
+      }
+    }
+
+  }
+
+  &--times {
+    @include tablet {
+      justify-content: flex-start;
+      padding-left: 1rem;
+    }
+  }
+}
+
+.splash-body {
+  .container {
+    bottom: 10vh;
+  }
+}
+
+
+
+.learn-more--left,
+.learn-more--right-inner {
+  padding: 3rem 1.5rem;
+  min-height: 33vh;
+  @include tablet {
+    padding: 9rem;
+    min-height: inherit;
+    height: auto;
+  }
+}
+.learn-more--right  {
+  background-size: cover;
+  display: block;
+
+  @include tablet {
+    height: 50%;
+  }
+
+  &:hover .learn-more--right-inner {
+    background-color: transparent;
+  }
+  &:hover .button.is-light {
+    background-color: $light;
+    color: $light-invert;
+  }
+}
+.learn-more--right-inner  {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

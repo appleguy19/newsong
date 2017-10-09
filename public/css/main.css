@@ -86,7 +86,8 @@ html {
   overflow-x: hidden;
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
 
 article,
 aside,
@@ -5519,6 +5520,8 @@ label.panel-block {
   flex-basis: 0;
   flex-grow: 1;
   flex-shrink: 1;
+  min-height: -webkit-min-content;
+  min-height: -moz-min-content;
   min-height: min-content; }
   .tile.is-ancestor {
     margin-left: -0.75rem;
@@ -6150,38 +6153,54 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
-.splash {
-  background-attachment: fixed;
-  background-color: #303030;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+.splash-head {
+  padding: 1.5rem; }
+  .splash-head--address p {
+    border-bottom: 2px solid white;
+    padding: 1rem; }
+  @media screen and (min-width: 769px), print {
+    .splash-head--address {
+      justify-content: flex-end; }
+      .splash-head--address p {
+        padding: inherit 1rem inherit inherit;
+        border-bottom: none;
+        border-right: 2px solid white; } }
+  @media screen and (min-width: 769px), print {
+    .splash-head--times {
+      justify-content: flex-start;
+      padding-left: 1rem; } }
+
+.splash-body .container {
+  bottom: 10vh; }
 
 .learn-more--left,
-.learn-more--right-top,
-.learn-more--right-bottom {
-  padding: 9rem; }
+.learn-more--right-inner {
+  padding: 3rem 1.5rem;
+  min-height: 33vh; }
+  @media screen and (min-width: 769px), print {
+    .learn-more--left,
+    .learn-more--right-inner {
+      padding: 9rem;
+      min-height: inherit;
+      height: auto; } }
 
-.learn-more--righter {
+.learn-more--right {
   background-size: cover;
-  display: block;
-  height: 50%; }
-  .learn-more--righter:hover .learn-more--rightest {
+  display: block; }
+  @media screen and (min-width: 769px), print {
+    .learn-more--right {
+      height: 50%; } }
+  .learn-more--right:hover .learn-more--right-inner {
     background-color: transparent; }
-  .learn-more--righter:hover .is-over-image {
+  .learn-more--right:hover .button.is-light {
     background-color: whitesmoke;
     color: #363636; }
 
-.learn-more--rightest {
+.learn-more--right-inner {
   background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center; }
-
-.is-over-image {
-  font-weight: 600; }
 
 .ankle {
   padding-top: 4rem;
@@ -6192,13 +6211,7 @@ label.panel-block {
       padding-right: 18rem; }
     .ankle .hero-body .container {
       padding-left: 14rem;
-      padding-right: 14rem; }
-    .ankle .ankle-links p:not(:last-child):after {
-      content: '\00B7';
-      font-size: 2rem;
-      line-height: 1;
-      position: relative;
-      left: 25%; } }
+      padding-right: 14rem; } }
   .ankle .ankle-links a:hover {
     color: #8DC63F; }
   .ankle .ankle-logo {
@@ -6219,3 +6232,10 @@ label.panel-block {
 
 .button {
   border-width: 2px; }
+
+.has-bg-image {
+  background-attachment: fixed;
+  background-color: #303030;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
