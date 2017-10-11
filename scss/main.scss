@@ -16,9 +16,15 @@ $button-background-color: transparent;
 @import "../node_modules/bulma/bulma";
 
 // Import custom page styles
+@import "_menu.scss";
 @import "_homepage.scss";
 @import "_ankle.scss";
 @import "_footer.scss";
+
+.is-transparent {
+  background-color: transparent;
+  color: inherit;
+}
 
 
 .is-love-wins {
@@ -36,7 +42,7 @@ $button-background-color: transparent;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   &--fixed {
     @include tablet {
       background-attachment: fixed;

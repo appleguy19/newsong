@@ -6153,6 +6153,74 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+.navbar-center {
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: stretch;
+  display: flex; }
+  @media screen and (min-width: 1024px) {
+    .navbar-center {
+      width: 83%; } }
+  @media screen and (min-width: 1216px) {
+    .navbar-center {
+      width: 70%; } }
+  @media screen and (min-width: 769px), print {
+    .navbar-center > .navbar-item {
+      margin: 0 0.5rem;
+      width: calc((100%-4rem)/5);
+      justify-content: center; }
+      .navbar-center > .navbar-item .navbar-link::after {
+        border-width: 2px; } }
+
+.navbar.is-transparent .navbar-center .navbar-link {
+  color: whitesmoke; }
+
+.navbar.is-transparent .social-links a {
+  color: whitesmoke;
+  font-size: 1.5rem;
+  margin: 0 .5rem; }
+  .navbar.is-transparent .social-links a:hover {
+    color: #8DC63F; }
+
+.navbar-logo {
+  position: absolute;
+  left: calc(50% - 1.5rem); }
+  .navbar-logo .navbar-logo-image {
+    height: 3rem;
+    z-index: 3; }
+
+.navbar-burger.burger {
+  z-index: 3; }
+
+.navbar-burger span {
+  height: 2px; }
+
+#mobileNavMenu {
+  background-color: #363636;
+  display: none;
+  font-size: 1.2em;
+  left: 0;
+  min-height: 100vh;
+  padding: 6rem 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2; }
+  #mobileNavMenu.is-active {
+    display: block; }
+  #mobileNavMenu .menu-list {
+    margin-bottom: 1.5rem; }
+  #mobileNavMenu .menu-list a {
+    color: whitesmoke; }
+    #mobileNavMenu .menu-list a:hover {
+      background-color: #303030; }
+  #mobileNavMenu .social-links {
+    font-size: 2rem;
+    padding: 1rem 0; }
+  #mobileNavMenu .social-links a:hover {
+    color: #8DC63F; }
+
 .splash-head {
   padding: 1.5rem; }
   .splash-head--address p {
@@ -6218,11 +6286,15 @@ label.panel-block {
   .ankle .ankle-cta {
     margin-top: 2rem; }
 
-.social-links a {
+.footer .social-links a {
   font-size: 1.5rem;
   color: #303030; }
-  .social-links a:hover {
+  .footer .social-links a:hover {
     color: #8DC63F; }
+
+.is-transparent {
+  background-color: transparent;
+  color: inherit; }
 
 .is-love-wins {
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;

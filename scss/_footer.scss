@@ -1,8 +1,10 @@
-.social-links a {
-  font-size: 1.5rem;
-  color: $black;
+.footer {
+  .social-links a {
+    font-size: 1.5rem;
+    color: $black;
 
-  &:hover {
-    color: $primary;
-  }
+    &:hover {
+      color: $primary;
+    }
+  }  
 }

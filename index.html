@@ -21,170 +21,140 @@
   <body>
     <section class="hero is-dark is-fullheight has-text-centered has-bg-image has-bg-image--fixed splash" style="background-image: url(public/img/splash.jpg)">
       <div class="hero-head splash-head">
-        <!-- <nav class="navbar is-transparent">
+        <aside id="mobileNavMenu" class="menu">
+          <p class="menu-label">
+            Check Us Out
+          </p>
+          <ul class="menu-list">
+            <li><a>Our Vision</a></li>
+            <li><a>Our Team</a></li>
+            <li><a>Our Heart</a></li>
+            <li><a>Our Services</a></li>
+          </ul>
+          <p class="menu-label">
+            Connect
+          </p>
+          <ul class="menu-list">
+            <li><a>Next Step Class</a></li>
+            <li><a>Past Messages</a></li>
+            <li><a>Kids &amp; Youth</a></li>
+            <li><a>College Students</a></li>
+            <li><a>Communication Card</a></li>
+            <li><a>Prayer Request</a></li>
+            <li><a>Baptism</a></li>
+          </ul>
+          <p class="menu-label">
+            Community
+          </p>
+          <ul class="menu-list">
+            <li><a>LifeGroups</a></li>
+            <li><a>Love Our City</a></li>
+            <li><a>Join the Team</a></li>
+            <li><a>Calendar of Events</a></li>
+            <li><a>Ministries</a></li>
+          </ul>
+          <div class="social-links">
+            <a href="https://www.facebook.com/newsongfellowship.edwardsville" title="Facebook" target="_blank" class="link"><i class="fa fa-facebook fa-fw"></i></a>
+            <a href="" title="Instagram" target="_blank" class="link"><i class="fa fa-instagram fa-fw"></i></a>
+            <a href="https://twitter.com/newsong2005" title="Twitter" target="_blank" class="link"><i class="fa fa-twitter fa-fw"></i></a>
+            <a href="http://subsplash.com/newsong/app" title="App" target="_blank" class="link"><i class="fa fa-mobile fa-fw"></i></a>
+          </div>
+        </aside>
+        <div class="level navbar-logo">
+          <div class="level-item">
+            <img src="public/img/nf-white-transparent.png" alt="Newsong Logo" class="navbar-logo-image">
+          </div>
+        </div>
+        <nav class="navbar is-transparent">
           <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="navMenu">
+            <div class="navbar-burger burger" data-target="mobileNavMenu">
               <span></span>
               <span></span>
               <span></span>
             </div>
           </div>
-
           <div id="navMenu" class="navbar-menu">
-            <div class="navbar-start">
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link  is-active" href="/documentation/overview/start/">
-                  Docs
+            <div class="navbar-center">
+              <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
+                <a class="navbar-link" href="#">
+                  Check Us Out
                 </a>
                 <div class="navbar-dropdown is-boxed">
-                  <a class="navbar-item " href="/documentation/overview/start/">
-                    Overview
+                  <a class="navbar-item" href="#">
+                    Our Services
                   </a>
-                  <a class="navbar-item " href="http://bulma.io/documentation/modifiers/syntax/">
-                    Modifiers
+                  <a class="navbar-item" href="#">
+                    Our Team
                   </a>
-                  <a class="navbar-item " href="http://bulma.io/documentation/columns/basics/">
-                    Columns
+                  <a class="navbar-item" href="#">
+                    Our Heart
                   </a>
-                  <a class="navbar-item " href="http://bulma.io/documentation/layout/container/">
-                    Layout
+                  <a class="navbar-item" href="#">
+                    Our Vision
                   </a>
-                  <a class="navbar-item " href="http://bulma.io/documentation/form/general/">
-                    Form
-                  </a>
-                  <a class="navbar-item " href="http://bulma.io/documentation/elements/box/">
-                    Elements
-                  </a>
-
-                    <a class="navbar-item is-active" href="http://bulma.io/documentation/components/breadcrumb/">
-                      Components
-                    </a>
-
-                  <hr class="navbar-divider">
-                  <div class="navbar-item">
-                    <div>
-                      <p class="is-size-6-desktop">
-                        <strong class="has-text-info">0.5.3</strong>
-                      </p>
-
-                        <small>
-                          <a class="bd-view-all-versions" href="/versions">View all versions</a>
-                        </small>
-
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="navbar-item has-dropdown is-hoverable">
-                <a class="navbar-link " href="http://bulma.io/blog/">
-                  Blog
+              <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
+                <a class="navbar-link" href="#">
+                  Connect
                 </a>
-                <div id="blogDropdown" class="navbar-dropdown is-boxed" data-style="width: 18rem;">
-
-                    <a class="navbar-item" href="/2017/08/03/list-of-tags/">
-                      <div class="navbar-content">
-                        <p>
-                          <small class="has-text-info">03 Aug 2017</small>
-                        </p>
-                        <p>New feature: list of tags</p>
-                      </div>
-                    </a>
-
-                    <a class="navbar-item" href="/2017/08/01/bulma-bootstrap-comparison/">
-                      <div class="navbar-content">
-                        <p>
-                          <small class="has-text-info">01 Aug 2017</small>
-                        </p>
-                        <p>Bulma / Bootstrap comparison</p>
-                      </div>
-                    </a>
-
-                    <a class="navbar-item" href="/2017/07/24/access-previous-bulma-versions/">
-                      <div class="navbar-content">
-                        <p>
-                          <small class="has-text-info">24 Jul 2017</small>
-                        </p>
-                        <p>Access previous Bulma versions</p>
-                      </div>
-                    </a>
-
-                  <a class="navbar-item" href="http://bulma.io/blog/">
-                    More posts
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="#">
+                    Next Step Class
                   </a>
-                  <hr class="navbar-divider">
-                  <div class="navbar-item">
-                    <div class="navbar-content">
-                      <div class="level is-mobile">
-                        <div class="level-left">
-                          <div class="level-item">
-                            <strong>Stay up to date!</strong>
-                          </div>
-                        </div>
-                        <div class="level-right">
-                          <div class="level-item">
-                            <a class="button bd-is-rss is-small" href="http://bulma.io/atom.xml">
-                              <span class="icon is-small">
-                                <i class="fa fa-rss"></i>
-                              </span>
-                              <span>Subscribe</span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="navbar-item has-dropdown is-hoverable">
-                <div class="navbar-link">
-                  More
-                </div>
-                <div id="moreDropdown" class="navbar-dropdown is-boxed">
-                  <a class="navbar-item " href="http://bulma.io/extensions/">
-                    <div class="level is-mobile">
-                      <div class="level-left">
-                        <div class="level-item">
-                          <p>
-                            <strong>Extensions</strong>
-                            <br>
-                            <small>Side projects to enhance Bulma</small>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="level-right">
-                        <div class="level-item">
-                          <span class="icon has-text-info">
-                            <i class="fa fa-plug"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
+                  <a class="navbar-item" href="#">
+                    Past Messages
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Kids &amp; Youth
+                  </a>
+                  <a class="navbar-item" href="#">
+                    College Students
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Communication Card
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Prayer Request
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Baptism
                   </a>
                 </div>
               </div>
-            </div>
-
-            <div class="navbar-end">
+              <div class="navbar-item navbar-center-spacer"></div>
+              <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
+                <a class="navbar-link" href="#">
+                  Community
+                </a>
+                <div class="navbar-dropdown is-boxed">
+                  <a class="navbar-item" href="#">
+                    LifeGroups
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Love Our City
+                  </a>
+                  <a class="navbar-item" href="#">
+                    <!-- THis is confusing, I don't know what this means, becuase you refer to your staff as 'team' -->
+                    Join the Team
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Calendar of Events
+                  </a>
+                  <a class="navbar-item" href="#">
+                    Ministries
+                  </a>
+                </div>
+              </div>
+              <div class="navbar-item social-links">
+                <a href="https://www.facebook.com/newsongfellowship.edwardsville" title="Facebook" target="_blank" class="link"><i class="fa fa-facebook fa-fw"></i></a>
+                <a href="" title="Instagram" target="_blank" class="link"><i class="fa fa-instagram fa-fw"></i></a>
+                <a href="https://twitter.com/newsong2005" title="Twitter" target="_blank" class="link"><i class="fa fa-twitter fa-fw"></i></a>
+                <a href="http://subsplash.com/newsong/app" title="App" target="_blank" class="link"><i class="fa fa-mobile fa-fw"></i></a>
+              </div>
             </div>
           </div>
-        </nav> -->
-        <!-- <nav class="level">
-          <p class="level-item has-text-centered has-text-weight-bold">
-            <a class="link is-info">Check Us Out</a>
-          </p>
-          <p class="level-item has-text-centered has-text-weight-bold">
-            <a class="link is-info">Connect</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <img src="public/img/nf-white-transparent.png" alt="" style="height: 60px;">
-          </p>
-          <p class="level-item has-text-centered has-text-weight-bold">
-            <a class="link is-info">Community</a>
-          </p>
-          <p class="level-item has-text-centered has-text-weight-bold">
-            <a class="link is-info">&square;&nbsp;&square;&nbsp;&square;&nbsp;&square;</a>
-          </p>
-        </nav> -->
+        </nav>
       </div>
       <div class="hero-body splash-body">
         <div class="container is-widescreen">
