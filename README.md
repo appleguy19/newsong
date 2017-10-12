@@ -5,7 +5,7 @@ This is the repo for Newsong's new website.
 
 ### For Developers
 
-To work on the Nesong website you should be familar with the following technologies:
+To work on the Newsong website you should be familar with the following technologies:
 
  - Yarn
  - Git
