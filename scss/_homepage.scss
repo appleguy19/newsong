@@ -1,5 +1,15 @@
 .splash-head {
   padding: 1.5rem;
+}
+
+.splash-body {
+  .container {
+    bottom: 10vh;
+  }
+
+  &--hand-drawn-welcome {
+    width: calc(18*1.7rem);
+  }
 
   &--address {
     p {
@@ -25,13 +35,9 @@
       padding-left: 1rem;
     }
   }
+
 }
 
-.splash-body {
-  .container {
-    bottom: 10vh;
-  }
-}
 
 
 

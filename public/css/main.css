@@ -6223,23 +6223,29 @@ label.panel-block {
 
 .splash-head {
   padding: 1.5rem; }
-  .splash-head--address p {
-    border-bottom: 2px solid white;
-    padding: 1rem; }
-  @media screen and (min-width: 769px), print {
-    .splash-head--address {
-      justify-content: flex-end; }
-      .splash-head--address p {
-        padding: inherit 1rem inherit inherit;
-        border-bottom: none;
-        border-right: 2px solid white; } }
-  @media screen and (min-width: 769px), print {
-    .splash-head--times {
-      justify-content: flex-start;
-      padding-left: 1rem; } }
 
 .splash-body .container {
   bottom: 10vh; }
+
+.splash-body--hand-drawn-welcome {
+  width: calc(18*1.7rem); }
+
+.splash-body--address p {
+  border-bottom: 2px solid white;
+  padding: 1rem; }
+
+@media screen and (min-width: 769px), print {
+  .splash-body--address {
+    justify-content: flex-end; }
+    .splash-body--address p {
+      padding: inherit 1rem inherit inherit;
+      border-bottom: none;
+      border-right: 2px solid white; } }
+
+@media screen and (min-width: 769px), print {
+  .splash-body--times {
+    justify-content: flex-start;
+    padding-left: 1rem; } }
 
 .learn-more--left,
 .learn-more--right-inner {
@@ -6312,3 +6318,13 @@ label.panel-block {
   @media screen and (min-width: 769px), print {
     .has-bg-image--fixed {
       background-attachment: fixed; } }
+
+.is-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
