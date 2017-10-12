@@ -9,8 +9,9 @@ To work on the Nesong website you should be familar with the following technolog
 
  - Yarn
  - Git
- -
-
+ - SCSS
+ - HTML
+ - JavaScript
 
 #### Grab the Code
 
