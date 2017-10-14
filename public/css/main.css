@@ -79,7 +79,7 @@ th {
 
 html {
   background-color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 300px;
@@ -6153,6 +6153,42 @@ label.panel-block {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
 
+.button {
+  border-width: 2px; }
+
+.has-bg-image {
+  background-color: #303030;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media screen and (min-width: 769px), print {
+    .has-bg-image--fixed {
+      background-attachment: fixed; } }
+
+.is-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+.is-transparent {
+  background-color: transparent;
+  color: inherit; }
+
+.is-love-wins {
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: white; }
+  .hero .is-love-wins {
+    font-size: 6rem; }
+
+.container.is-readable {
+  max-width: 800px; }
+
 .navbar-center {
   justify-content: center;
   margin-right: auto;
@@ -6185,7 +6221,8 @@ label.panel-block {
 
 .navbar-logo {
   position: absolute;
-  left: calc(50% - 1.5rem); }
+  left: calc(50% - 1.5rem);
+  top: 1.6rem; }
   .navbar-logo .navbar-logo-image {
     height: 3rem;
     z-index: 3; }
@@ -6221,6 +6258,77 @@ label.panel-block {
   #mobileNavMenu .social-links a:hover {
     color: #8DC63F; }
 
+.tile-button.is-white {
+  background-color: white;
+  border-color: transparent;
+  color: #303030; }
+
+.tile-button.is-black {
+  background-color: #303030;
+  border-color: transparent;
+  color: white; }
+
+.tile-button.is-light {
+  background-color: whitesmoke;
+  border-color: transparent;
+  color: #363636; }
+
+.tile-button.is-dark {
+  background-color: #363636;
+  border-color: transparent;
+  color: whitesmoke; }
+
+.tile-button.is-primary {
+  background-color: #8DC63F;
+  border-color: transparent;
+  color: #fff; }
+
+.tile-button.is-info {
+  background-color: #3273dc;
+  border-color: transparent;
+  color: #fff; }
+
+.tile-button.is-success {
+  background-color: #8DC63F;
+  border-color: transparent;
+  color: #fff; }
+
+.tile-button.is-warning {
+  background-color: #ffdd57;
+  border-color: transparent;
+  color: rgba(0, 0, 0, 0.7); }
+
+.tile-button.is-danger {
+  background-color: #ff3860;
+  border-color: transparent;
+  color: #fff; }
+
+.tile-button:not(.tile-button--custom) .tile-button-inner {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+  @media screen and (min-width: 769px), print {
+    .tile-button:not(.tile-button--custom) .tile-button-inner {
+      padding: 0; }
+      .tile-button:not(.tile-button--custom) .tile-button-inner:after {
+        content: "";
+        display: block;
+        padding-bottom: 57%; } }
+
+.tile-button-inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%; }
+
+.tile-button.has-bg-image .tile-button-inner {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.tile-button.has-bg-image:hover .tile-button-inner {
+  background-color: transparent; }
+  .tile-button.has-bg-image:hover .tile-button-inner .button.is-light {
+    background-color: whitesmoke;
+    color: #363636; }
+
 .splash-head {
   padding: 1.5rem; }
 
@@ -6247,33 +6355,27 @@ label.panel-block {
     justify-content: flex-start;
     padding-left: 1rem; } }
 
-.learn-more--left,
-.learn-more--right-inner {
-  padding: 3rem 1.5rem;
-  min-height: 33vh; }
-  @media screen and (min-width: 769px), print {
-    .learn-more--left,
-    .learn-more--right-inner {
-      padding: 9rem;
-      min-height: inherit;
-      height: auto; } }
+.learn-more--left {
+  flex-direction: column; }
 
 .learn-more--right {
   display: block; }
   @media screen and (min-width: 769px), print {
     .learn-more--right {
       height: 50%; } }
-  .learn-more--right:hover .learn-more--right-inner {
-    background-color: transparent; }
-  .learn-more--right:hover .button.is-light {
-    background-color: whitesmoke;
-    color: #363636; }
 
-.learn-more--right-inner {
-  background-color: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center; }
+.learn-more--left,
+.learn-more--right .tile-button-inner {
+  padding: 3rem 1.5rem; }
+  @media screen and (min-width: 1024px) {
+    .learn-more--left,
+    .learn-more--right .tile-button-inner {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+  @media screen and (min-width: 1408px) {
+    .learn-more--left,
+    .learn-more--right .tile-button-inner {
+      padding: 8rem 6rem; } }
 
 .ankle {
   padding-top: 4rem;
@@ -6297,34 +6399,3 @@ label.panel-block {
   color: #303030; }
   .footer .social-links a:hover {
     color: #8DC63F; }
-
-.is-transparent {
-  background-color: transparent;
-  color: inherit; }
-
-.is-love-wins {
-  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
-  font-weight: 600;
-  color: white; }
-
-.button {
-  border-width: 2px; }
-
-.has-bg-image {
-  background-color: #303030;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  @media screen and (min-width: 769px), print {
-    .has-bg-image--fixed {
-      background-attachment: fixed; } }
-
-.is-visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }

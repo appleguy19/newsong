@@ -1,0 +1,46 @@
+.tile-button {
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+    &.is-#{$name} {
+      background-color: $color;
+      border-color: transparent;
+      color: $color-invert;
+    }
+  }
+}
+.tile-button:not(.tile-button--custom) {
+  .tile-button-inner {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    @include tablet {
+      padding: 0;
+      &:after {
+        content: "";
+        display: block;
+        padding-bottom: 57%;
+      }
+    }
+  }
+}
+
+
+.tile-button-inner {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.tile-button.has-bg-image .tile-button-inner {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.tile-button.has-bg-image:hover .tile-button-inner {
+  background-color: transparent;
+
+  .button.is-light {
+    background-color: $light;
+    color: $light-invert;
+  }
+}

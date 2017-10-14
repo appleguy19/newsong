@@ -1,0 +1,44 @@
+.has-bg-image {
+  background-color: $black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--fixed {
+    @include tablet {
+      background-attachment: fixed;
+    }
+  }
+}
+
+.is-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.is-transparent {
+  background-color: transparent;
+  color: inherit;
+}
+
+
+.is-love-wins {
+  font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 600;
+  color: $white;
+
+  .hero & {
+    font-size: 6rem;
+  }
+}
+
+
+.container.is-readable {
+  max-width: 800px;
+}
