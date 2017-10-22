@@ -38,3 +38,12 @@ Everything you need to build this site can be done with Yarn Scripts. Check the 
 0. Compile and begin watching Sass/SCSS: `yarn run css-watch`
 
 0. To build for production: `yarn run css-build`
+
+#### Git Hooks
+
+There is a [pre-commit hook to optimize images](https://github.com/JamieMason/ImageOptim-CLI#adding-to-git-pre-commit-hook) using imageOptim-cli
+
+```
+images=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.png' '*.jpg')
+$(exit $?) || (echo "$images" | imageOptim -a -q && git add $images)
+```
