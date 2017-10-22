@@ -6,3 +6,13 @@
 @include tablet {
   $body-size: 18px;
 }
+
+@media screen and (min-width: 600px) and (max-width: $tablet - 1px) {
+  .columns.is-phablet {
+    display: flex;
+  }
+  .column.is-half-phablet {
+    flex: none;
+    width: 50%;
+  }
+}

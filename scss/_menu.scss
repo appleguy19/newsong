@@ -40,10 +40,10 @@
   position: absolute;
   left: calc(50% - 1.5rem);
   top: 1.6rem;
+  z-index: 3;
 
   .navbar-logo-image {
     height: 3rem;
-    z-index: 3;
   }
 }
 

@@ -2640,6 +2640,9 @@ a.box:active {
   .image.is-128x128 {
     height: 128px;
     width: 128px; }
+  .image.is-192x192 {
+    height: 192px;
+    width: 192px; }
 
 .notification {
   background-color: whitesmoke;
@@ -6156,6 +6159,13 @@ label.panel-block {
 .button {
   border-width: 2px; }
 
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .columns.is-phablet {
+    display: flex; }
+  .column.is-half-phablet {
+    flex: none;
+    width: 50%; } }
+
 .has-bg-image {
   background-color: #303030;
   background-position: center;
@@ -6191,6 +6201,15 @@ label.panel-block {
   margin-bottom: 4rem;
   max-width: 800px; }
 
+.is-person-list .column {
+  padding-bottom: 5rem; }
+
+.has-margin-0-a {
+  margin: 0 auto; }
+
+.is-circle img {
+  border-radius: 50%; }
+
 .navbar-center {
   justify-content: center;
   margin-right: auto;
@@ -6224,10 +6243,10 @@ label.panel-block {
 .navbar-logo {
   position: absolute;
   left: calc(50% - 1.5rem);
-  top: 1.6rem; }
+  top: 1.6rem;
+  z-index: 3; }
   .navbar-logo .navbar-logo-image {
-    height: 3rem;
-    z-index: 3; }
+    height: 3rem; }
 
 .navbar-burger.burger {
   z-index: 3; }
