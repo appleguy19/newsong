@@ -28,14 +28,19 @@
 }
 
 
-.is-love-wins {
+.title.is-love-wins {
   font-family: Helvetica, 'Helvetica Neue', Arial, sans-serif;
   font-weight: 600;
   color: $white;
 
   .hero & {
-    font-size: 6rem;
+    font-size: 7rem;
   }
+}
+
+.subtitle.is-love-wins {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 
@@ -58,4 +63,13 @@
 
 .is-circle img {
   border-radius: 50%;
+}
+
+.section.is-dark {
+  background-color: $dark;
+  color: $dark-invert;
+}
+
+.route-app__footer.route-app__footer--embedded {
+  display: none !important;
 }
