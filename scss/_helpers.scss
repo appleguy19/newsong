@@ -68,6 +68,8 @@
 .section.is-dark {
   background-color: $dark;
   color: $dark-invert;
+
+  h1,h2,h3,h4,h5,h5 { color: $dark-invert; }
 }
 
 .route-app__footer.route-app__footer--embedded {
@@ -76,4 +78,16 @@
 
 .columns.is-centered-vertically {
   align-items: center;
+}
+
+
+.button.is-multiline {
+  height: 3.75em;
+}
+
+.section-top-image {
+  min-height: 200px;
+  @include tablet {
+    min-height: 600px;
+  }
 }

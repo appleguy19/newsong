@@ -6217,12 +6217,23 @@ label.panel-block {
 .section.is-dark {
   background-color: #363636;
   color: whitesmoke; }
+  .section.is-dark h1, .section.is-dark h2, .section.is-dark h3, .section.is-dark h4, .section.is-dark h5, .section.is-dark h5 {
+    color: whitesmoke; }
 
 .route-app__footer.route-app__footer--embedded {
   display: none !important; }
 
 .columns.is-centered-vertically {
   align-items: center; }
+
+.button.is-multiline {
+  height: 3.75em; }
+
+.section-top-image {
+  min-height: 200px; }
+  @media screen and (min-width: 769px), print {
+    .section-top-image {
+      min-height: 600px; } }
 
 .navbar-center {
   justify-content: center;
