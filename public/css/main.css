@@ -6194,7 +6194,7 @@ label.panel-block {
   font-weight: 600;
   color: white; }
   .hero .title.is-love-wins {
-    font-size: 7rem; }
+    font-size: 9rem; }
 
 .subtitle.is-love-wins {
   max-width: 800px;
@@ -6220,6 +6220,9 @@ label.panel-block {
 
 .route-app__footer.route-app__footer--embedded {
   display: none !important; }
+
+.columns.is-centered-vertically {
+  align-items: center; }
 
 .navbar-center {
   justify-content: center;

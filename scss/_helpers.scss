@@ -34,7 +34,7 @@
   color: $white;
 
   .hero & {
-    font-size: 7rem;
+    font-size: 9rem;
   }
 }
 
@@ -72,4 +72,8 @@
 
 .route-app__footer.route-app__footer--embedded {
   display: none !important;
+}
+
+.columns.is-centered-vertically {
+  align-items: center;
 }

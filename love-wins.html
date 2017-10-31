@@ -32,13 +32,15 @@
       </div>
     </section>
     <section class="section is-dark">
-      <div class="video">
-        <video src="" poster="" preload="auto" playsinline="true"></video>
+      <div class="container is-desktop">
+        <div class="video">
+          <video src="public/video/nf-promo.mp4" autoplay playsinline="true" controls></video>
+        </div>
       </div>
     </section>
     <section class="section is-dark">
       <div class="container is-readable">
-        <div class="content">
+        <div class="content is-medium">
           <p>
             Jesus was once asked, of all the commandments in Scripture, which was the most important. The question essentially meant: “What’s the highest priority for living in harmony with the ways of God?” Without hesitation he spoke about loving God with every part of our being and loving our neighbor as ourselves. He made it clear there was no command greater than this.
           </p>
@@ -80,7 +82,7 @@
         <div class="column">
           <div class="tile-button has-bg-image is-square-tablet" style="background-image: url(public/img/living-room-preaching-small.jpg);">
             <div class="tile-button-inner">
-              <div class="button is-light is-outlined is-medium has-text-weight-bold">Past Messages</div>
+              <div class="button is-light is-outlined is-medium has-text-weight-bold">Past Sermons</div>
             </div>
           </div>
         </div>
@@ -116,31 +118,64 @@
     </footer>
 
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
+      'use strict';
 
-      // Get all "navbar-burger" elements
-      var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(function ($el) {
-          $el.addEventListener('click', function () {
-
-            // Get the target from the "data-target" attribute
-            var target = $el.dataset.target;
-            var $target = document.getElementById(target);
-
-            // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-            $el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
-
-          });
+      //region Utilities
+      var passiveListener = function passiveListener(el, event, fn) {
+      var supportsPassive = false;
+      try {
+        var opts = Object.defineProperty({}, 'passive', {
+          get: function get() {
+            supportsPassive = true;
+          }
         });
-      }
+        window.addEventListener('test', null, opts);
+      } catch (e) {}
+      el.addEventListener(event, fn, supportsPassive ? { passive: true } : false);
+      };
+      var isInViewport = function isInViewport(el) {
+      var _el$getBoundingClient = el.getBoundingClientRect(),
+          top = _el$getBoundingClient.top + 50,
+          right = _el$getBoundingClient.right,
+          bottom = _el$getBoundingClient.bottom + 50,
+          left = _el$getBoundingClient.left;
 
+      var height = window.innerHeight || document.documentElement.clientHeight;
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      return top >= 0 && right <= width && bottom <= height && left >= 0;
+      };
+      //endregion
+
+      //region Video On Scroll
+      var videoOnScroll = function videoOnScroll() {
+      var autoplayingVideos = document.querySelectorAll('video[autoplay]');
+      var playOrStop = function playOrStop() {
+        return autoplayingVideos.forEach(function (video) {
+          return isInViewport(video) ? video.play() : video.pause();
+        });
+      };
+      autoplayingVideos.forEach(function (video) {
+        video.autoplay = false;
+        video.pause();
+        video.currentTime = 0;
       });
+      passiveListener(window, 'scroll', playOrStop);
+      passiveListener(window, 'resize', playOrStop);
+      };
+      //endregion
+
+      //region Document Ready
+      var ready = function ready() {
+      videoOnScroll();
+      };
+
+      if (document.readyState !== 'loading') {
+      ready();
+      } else {
+      document.addEventListener('DOMContentLoaded', ready);
+      }
+      //endregion
+      //# sourceMappingURL=product-pages.js.map
     </script>
   </body>
 </html>
