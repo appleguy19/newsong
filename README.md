@@ -5,7 +5,7 @@ This is the repo for Newsong's new website.
 
 ### For Developers
 
-To work on the Newsong website you should be familar with the following technologies:
+To work on the Newsong website you should be familiar with the following technologies:
 
  - Yarn
  - Git
@@ -38,6 +38,18 @@ Everything you need to build this site can be done with Yarn Scripts. Check the 
 0. Compile and begin watching Sass/SCSS: `yarn run css-watch`
 
 0. To build for production: `yarn run css-build`
+
+### Deploying this website
+
+0. Create a branch.
+
+0. Commit changes to this branch (don't forget to compile the CSS!)
+
+0. Create a Pull Request (into `master`). Reference either a Trello Card or a Github Issue.
+
+0. Merge into `master`.
+
+0. Pull down the latest copy of master & FTP the files to the Newsong FTP Server. *note: this is horrible and needs to change soon.*
 
 #### Git Hooks
 
