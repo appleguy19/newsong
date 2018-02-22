@@ -6364,7 +6364,7 @@ label.panel-block {
   padding-bottom: 4rem; }
   @media screen and (min-width: 769px), print {
     .tile-button:not(.tile-button--custom) .tile-button-inner {
-      padding: 0; } }
+      padding: calc(28.125% - 22.5px) 0; } }
 
 .tile-button-inner {
   align-items: center;
@@ -6373,8 +6373,11 @@ label.panel-block {
   height: 100%; }
 
 .tile-button.has-bg-image .tile-button-inner {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: calc(28.125% - 22.5px) 0; }
+  background-color: rgba(0, 0, 0, 0.4); }
+
+@media screen and (min-width: 769px), print {
+  .tile-button.has-two-line-button .tile-button-inner {
+    padding: calc(28.125% - 37.5px) 0; } }
 
 .tile-button.has-iframe-image .tile-button-inner {
   position: relative;

@@ -15,11 +15,10 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
     @include tablet {
-      padding: 0;
+      padding: calc(28.125% - 22.5px) 0;
     }
   }
 }
-
 
 .tile-button-inner {
   align-items: center;
@@ -30,7 +29,12 @@
 
 .tile-button.has-bg-image .tile-button-inner {
   background-color: rgba(0,0,0,0.4);
-  padding: calc(28.125% - 22.5px) 0;
+}
+
+.tile-button.has-two-line-button .tile-button-inner {
+  @include tablet {
+    padding: calc(28.125% - 37.5px) 0;
+  }
 }
 
 .tile-button.has-iframe-image {
