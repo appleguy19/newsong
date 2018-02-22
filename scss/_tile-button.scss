@@ -16,11 +16,6 @@
     padding-bottom: 4rem;
     @include tablet {
       padding: 0;
-      &:after {
-        content: "";
-        display: block;
-        padding-bottom: 57%;
-      }
     }
   }
 }
@@ -35,6 +30,44 @@
 
 .tile-button.has-bg-image .tile-button-inner {
   background-color: rgba(0,0,0,0.4);
+  padding: calc(28.125% - 22.5px) 0;
+}
+
+.tile-button.has-iframe-image {
+
+  .tile-button-inner {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding: 28.125% 0;
+  }
+
+  iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+  }
+
+  .tile-button-iframe-cover {
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  &:hover {
+    .tile-button-iframe-cover {
+      background-color: transparent;
+    }
+
+    .button.is-light {
+      background-color: $light;
+      color: $light-invert;
+    }
+  }
+
 }
 
 .tile-button.has-bg-image:hover .tile-button-inner {
