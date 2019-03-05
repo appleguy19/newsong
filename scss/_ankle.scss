@@ -1,4 +1,4 @@
-.ankle  {
+.ankle.hero  {
   padding-top: 4rem;
   padding-bottom: 4rem;
 
@@ -14,7 +14,7 @@
     }
   }
 
-  .ankle-links a:hover {
+  &.is-black .ankle-links a:hover {
     color: $primary;
   }
 

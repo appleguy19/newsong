@@ -49,7 +49,11 @@
   margin-bottom: 4rem;
   max-width: 800px;
 
+  .section & {
+    margin-top: 0;
+  }
 }
+
 
 .is-person-list {
   .column {
