@@ -87,6 +87,7 @@ html {
   overflow-y: scroll;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
           text-size-adjust: 100%; }
 
 article,
@@ -5925,7 +5926,6 @@ label.panel-block {
   flex-grow: 1;
   flex-shrink: 1;
   min-height: -webkit-min-content;
-  min-height: -moz-min-content;
   min-height: min-content; }
   .tile.is-ancestor {
     margin-left: -0.75rem;
