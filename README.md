@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6e252336-5098-4be5-8293-997c2dfd75fa/deploy-status)](https://app.netlify.com/sites/newsong/deploys)
+
 # About
 
 This is the repo for Newsong's new website.
@@ -25,11 +27,11 @@ To work on the Newsong website you should be familiar with the following technol
 
 0. Install [Homebrew](http://brew.sh/)
 
-0. Install Node.js via Homebrew: `brew install node`
+0. Install Node via Homebrew: `brew install node`
 
-0. Install Ruby via Homebrew: `brew install yarn`
+0. Install Yarn via Homebrew: `brew install yarn` or if it  is already installed run `brew upgrade yarn` to get the latest.
 
-0. Install dependencies: `yarn`
+0. `cd` to this directory and install dependencies: `yarn`
 
 ### Running the Scripts
 
@@ -43,13 +45,13 @@ Everything you need to build this site can be done with Yarn Scripts. Check the 
 
 0. Create a branch.
 
-0. Commit changes to this branch (don't forget to compile the CSS!)
+0. Commit changes to that branch.
 
-0. Create a Pull Request (into `master`). Reference either a Trello Card or a Github Issue.
+0. Create a Pull Request (into `master`). Remember to reference a Github Issue if there is one.
 
 0. Merge into `master`.
 
-0. Pull down the latest copy of master & FTP the files to the Newsong FTP Server. *note: this is horrible and needs to change soon.*
+0. The site will be automatically deployed via [Netlify](https://netlify.com) to https://newsong.netlify.com *and very soon to the actual public URL*
 
 #### Git Hooks
 
