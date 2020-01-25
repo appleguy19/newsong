@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<section class="hero is-dark">
+  {% include nav.html %}
+</section>
+<section class="section has-bg-image section-top-image" style="background-image: url(public/img/{{ page.image }})"></section>
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container is-widescreen has-text-centered">
+      <h1 class="title is-size-3-mobile is-uppercase">
+        {{ page.title }}
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-readable">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</section>
+<section class="container is-fullhd">
+  <div class="columns is-gapless is-marginless has-text-centered">
+    <div class="column">
+      <a href="our-services.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(public/img/living-room-communion-side-hug-small.jpg);">
+        <div class="tile-button-inner">
+          <div class="button is-light is-outlined is-medium has-text-weight-bold">Our Services</div>
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="current-series.html" class="tile-button has-iframe-image is-square-tablet">
+        <div class="tile-button-inner">
+          <iframe src="https://subsplash.com/+f947/embed/mi/*?video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="tile-button-iframe-cover"></div>
+          <div class="button is-light is-outlined is-medium has-text-weight-bold">Current Series</div>
+        </div>
+      </a>
+    </div>
+    <div class="column">
+      <a href="https://subsplash.com/newsong/past-sermons" class="tile-button has-bg-image is-square-tablet" style="background-image: url(public/img/living-room-dave-preaching-small.jpg);">
+        <div class="tile-button-inner">
+          <div class="button is-light is-outlined is-medium has-text-weight-bold">Past Sermons</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
