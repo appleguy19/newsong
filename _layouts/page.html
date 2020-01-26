@@ -25,27 +25,13 @@ layout: default
 <section class="container is-fullhd">
   <div class="columns is-gapless is-marginless has-text-centered">
     <div class="column">
-      <a href="our-services.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(public/img/living-room-communion-side-hug-small.jpg);">
-        <div class="tile-button-inner">
-          <div class="button is-light is-outlined is-medium has-text-weight-bold">Our Services</div>
-        </div>
-      </a>
+      {% include page_link.html url="{{ page.left_link }}" %}
     </div>
     <div class="column">
-      <a href="current-series.html" class="tile-button has-iframe-image is-square-tablet">
-        <div class="tile-button-inner">
-          <iframe src="https://subsplash.com/+f947/embed/mi/*?video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-          <div class="tile-button-iframe-cover"></div>
-          <div class="button is-light is-outlined is-medium has-text-weight-bold">Current Series</div>
-        </div>
-      </a>
+      {% include page_link.html url="{{ page.middle_link }}" %}
     </div>
     <div class="column">
-      <a href="next-steps.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(public/img/living-room-cello-small.jpg);">
-        <div class="tile-button-inner">
-          <div class="button is-light is-outlined is-medium has-text-weight-bold">Next Steps</div>
-        </div>
-      </a>
+      {% include page_link.html url="{{ page.right_link }}" %}
     </div>
   </div>
 </section>
