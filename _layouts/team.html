@@ -1,0 +1,134 @@
+---
+layout: default
+---
+
+<section class="hero is-dark">
+  {% include nav.html %}
+</section>
+{% if page.image %}<section class="section has-bg-image section-top-image" style="background-image: url(/public/img/{{ page.image }})"></section>{% endif %}
+<section class="hero is-primary">
+  <div class="hero-body">
+    <div class="container is-widescreen has-text-centered">
+      <h1 class="title is-size-3-mobile is-uppercase">
+        {{ page.title }}
+      </h1>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-readable">
+    <div class="content">
+      {{ content }}
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-size-2">Pastoral Staff</h2>
+    <div class="columns is-phablet is-multiline is-centered has-text-centered is-person-list">
+      <div class="column is-half-phablet is-half-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/dave-romoser.jpg">
+        </figure>
+        <h2 class="is-size-3">Dave Romoser</h2>
+        <h4 class="subtitle is-marginless">Lead Pastor</h4>
+        <a href="mailto:dave.romoser@newsong-fellowship.com">dave.romoser@newsong-fellowship.com</a>
+      </div>
+      <div class="column is-half-phablet is-half-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/tim-giltner.jpg">
+        </figure>
+        <h2 class="is-size-3">Tim Giltner</h2>
+        <h4 class="subtitle is-marginless">Administrative Pastor</h4>
+        <a href="mailto:tim.giltner@newsong-fellowship.com">tim.giltner@newsong-fellowship.com</a>
+      </div>
+      <div class="column is-half-phablet is-half-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/lindsey-apple.jpg">
+        </figure>
+        <h2 class="is-size-3">Lindsey Apple</h2>
+        <h4 class="subtitle is-marginless">Associate Pastor</h4>
+        <a href="mailto:lindsey.apple@newsong-fellowship.com">lindsey.apple@newsong-fellowship.com</a>
+      </div>
+      <div class="column is-half-phablet is-half-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/grant-claunch.jpg">
+        </figure>
+        <h2 class="is-size-3">Grant Romoser-Claunch</h2>
+        <h4 class="subtitle is-marginless">Youth Pastor</h4>
+        <a href="mailto:grant.claunch@newsong-fellowship.com">grant.claunch@newsong-fellowship.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-size-2">Administrative Staff</h2>
+    <div class="columns is-phablet is-multiline is-centered has-text-centered is-person-list">
+      <div class="column is-half-phablet is-half-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/kristina-heckelman.jpg">
+        </figure>
+        <h2 class="is-size-3">Kristina Heckelman</h2>
+        <a href="mailto:kristina.heckelman@newsong-fellowship.com">kristina.heckelman@newsong-fellowship.com</a>
+      </div>
+      <div class="column is-half-phablet is-half-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/kelly-romoser.jpg">
+        </figure>
+        <h2 class="is-size-3">Kelly Romoser</h2>
+        <a href="mailto:kelly.romoser@newsong-fellowship.com">kelly.romoser@newsong-fellowship.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <h2 class="title is-size-2">Elders</h2>
+    <div class="columns is-phablet is-multiline is-centered has-text-centered is-person-list">
+      <div class="column is-half-phablet is-one-third-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/bill-collins.jpg">
+        </figure>
+        <h2 class="is-size-3">Bill Collins</h2>
+      </div>
+      <div class="column is-half-phablet is-one-third-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/jami-curley.jpg">
+        </figure>
+        <h2 class="is-size-3">Jami Curley</h2>
+      </div>
+      <div class="column is-half-phablet is-one-third-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/marc-gibbs.jpg">
+        </figure>
+        <h2 class="is-size-3">Marc Gibbs</h2>
+      </div>
+      <div class="column is-half-phablet is-one-third-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/patti-hoffman.jpg">
+        </figure>
+        <h2 class="is-size-3">Patti Hoffman</h2>
+      </div>
+      <div class="column is-half-phablet is-one-third-tablet">
+        <figure class="image is-192x192 is-circle has-margin-0-a">
+          <img src="/public/img/denise-ukena.jpg">
+        </figure>
+        <h2 class="is-size-3">Denise Ukena</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container is-fullhd">
+  <div class="columns is-gapless is-marginless has-text-centered">
+    <div class="column">
+      {% include page_link.html link=page.left_link %}
+    </div>
+    <div class="column">
+      {% include page_link.html link=page.middle_link %}
+    </div>
+    <div class="column">
+      {% include page_link.html link=page.right_link %}
+    </div>
+  </div>
+</section>
