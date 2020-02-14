@@ -25,6 +25,11 @@ markdown:    kramdown
 kramdown:
   input: GFM
 
+# Set as true for compression stats
+# But only true for local development!
+# http://jch.penibelst.de
+compress_html:
+  profile: false
 
 # Ministries
 collections:
