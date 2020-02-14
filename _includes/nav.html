@@ -1,29 +1,15 @@
 <div class="hero-head splash-head">
   <aside id="mobileNavMenu" class="menu">
-    <p class="menu-label">
-      I'm New
-    </p>
-    <ul class="menu-list">
-      <li><a href="/new/what-to-expect.html">What to Expect</a></li>
-      <li><a href="/new/our-services.html">Our Services</a></li>
-    </ul>
-    <p class="menu-label">
-      About Us
-    </p>
-    <ul class="menu-list">
-      <li><a href="/about/what-we-believe.html">What we Believe</a></li>
-      <li><a href="/about/our-team.html">Our Team</a></li>
-    </ul>
-    <p class="menu-label">
-      Connect
-    </p>
-    <ul class="menu-list">
-      <li><a href="/connect/sensory.html">Sensory City</a></li>
-      <li><a href="/connect/next-steps.html">Next Steps</a></li>
-      <li><a href="/connect/lifegroups.html">LifeGroups</a></li>
-      <li><a href="/connect/past-sermons.html">Past Sermons</a></li>
-      <li><a href="/connect/giving.html">Give</a></li>
-    </ul>
+    {% for group in site.data.navigation.groups %}
+      <p class="menu-label">
+        {{ group.title }}
+      </p>
+      <ul class="menu-list">
+        {% for page in group.pages %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
     <div class="social-links">
       <a href="https://www.facebook.com/newsongfellowship.edwardsville" title="Facebook" rel="noreferrer" target="_blank" class="link"><i class="fa fa-facebook fa-fw"></i></a>
       <a href="https://www.instagram.com/newsongfellowship/" title="Instagram" rel="noreferrer" target="_blank" class="link"><i class="fa fa-instagram fa-fw"></i></a>
@@ -41,55 +27,23 @@
     </div>
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-center">
-        <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
-          <a class="navbar-link">
-            I'm New
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/new/what-to-expect.html">
-              What to Expect
-            </a>
-            <a class="navbar-item" href="/new/our-services.html">
-              Our Services
-            </a>
-          </div>
-        </div>
-        <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
-          <a class="navbar-link">
-            About Us
-          </a>
-          <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/about/what-we-believe.html">
-              What We Believe
-            </a>
-            <a class="navbar-item" href="/about/our-team.html">
-              Our Team
-            </a>
-          </div>
-        </div>
+        {% for group in site.data.navigation.groups %}
+        {% if forloop.index == 3 %}
         <div class="navbar-item navbar-center-spacer"></div>
+        {% endif %}
         <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
           <a class="navbar-link">
-            Connect
+            {{ group.title }}
           </a>
           <div class="navbar-dropdown is-boxed">
-            <a class="navbar-item" href="/connect/sensory.html">
-              Sensory City
-            </a>
-            <a class="navbar-item" href="/connect/next-steps.html">
-              Next Steps
-            </a>
-            <a class="navbar-item" href="/connect/lifegroups.html">
-              LifeGroups
-            </a>
-            <a class="navbar-item" href="/connect/past-sermons.html">
-              Past Sermons
-            </a>
-            <a class="navbar-item" href="/connect/giving.html">
-              Give
-            </a>
+            {% for page in group.pages %}
+              <a class="navbar-item" href="{{ page.url }}">
+                {{ page.title }}
+              </a>
+            {% endfor %}
           </div>
         </div>
+        {% endfor %}
         <div class="navbar-item social-links">
           <a href="https://www.facebook.com/newsongfellowship.edwardsville" title="Facebook" rel="noreferrer" target="_blank" class="link"><i class="fa fa-facebook fa-fw"></i></a>
           <a href="https://www.instagram.com/newsongfellowship/" title="Instagram" rel="noreferrer" target="_blank" class="link"><i class="fa fa-instagram fa-fw"></i></a>

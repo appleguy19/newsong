@@ -1,0 +1,25 @@
+groups:
+  - title: I'm New
+    pages:
+      - title: What to Expect
+        url: /new/what-to-expect.html
+      - title: Our Services
+        url: /new/our-services.html
+  - title: About Us
+    pages:
+      - title: What we Believe
+        url: /about/what-we-believe.html
+      - title: Our Team
+        url: /about/our-team.html
+  - title: Connect
+    pages:
+      - title: Senosry City
+        url: /connect/sensory.html
+      - title: Next Steps
+        url: /connect/next-steps.html
+      - title: LifeGroups
+        url: /connect/lifegroups.html
+      - title: Past Sermons
+        url: /connect/past-sermons.html
+      - title: Give
+        url: /connect/giving.html
