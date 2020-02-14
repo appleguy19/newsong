@@ -29,7 +29,7 @@ To work on the Newsong website you should be familiar with the following technol
 
 0. Install Node via Homebrew: `brew install node`
 
-0. Install Yarn via Homebrew: `brew install yarn` or if it  is already installed run `brew upgrade yarn` to get the latest.
+0. Install Yarn via Homebrew: `brew install yarn`
 
 0. `cd` to this directory and install dependencies: `yarn`
 
@@ -55,9 +55,9 @@ Everything you need to build this site can be done with Yarn Scripts. Check the 
 
 #### Git Hooks
 
-There is a [pre-commit hook to optimize images](https://github.com/JamieMason/ImageOptim-CLI#adding-to-git-pre-commit-hook) using imageOptim-cli
+It is very helpful to have a [pre-commit hook to optimize images](https://nchristiny.com/blog/command-line-image-optimization) using [imageoptim-cli](https://github.com/JamieMason/ImageOptim-CLI). Add this snippet below to accomplish this.
 
 ```
 images=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.png' '*.jpg')
-$(exit $?) || (echo "$images" | imageOptim -a -q && git add $images)
+$(exit $?) || (echo "$images" | imageoptim -a && git add $images)
 ```
