@@ -13,7 +13,8 @@ collections:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Contains Subspah Embed', name: 'subsplash-embed', widget: 'boolean' }
+      - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Left Link', name: 'left_link', widget: 'string', default: "example.html" }
       - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: "example.html" }
       - { label: 'Right Link', name: 'right_link', widget: 'string', default: "example.html" }
