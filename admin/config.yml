@@ -1,0 +1,40 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+media_folder: "public/img" # Media files will be stored in the repo under images/uploads
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: '_pages/'
+    create: true
+    editor:
+      preview: false
+    fields:
+      - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+      - { label: 'Contains Subspah Embed', name: 'subsplash-embed', widget: 'boolean' }
+      - { label: 'Left Link', name: 'left_link', widget: 'string', default: "example.html" }
+      - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: "example.html" }
+      - { label: 'Right Link', name: 'right_link', widget: 'string', default: "example.html" }
+  - name: "config"
+    label: "Config"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - label: "Navigation Items"
+            name: "groups"
+            widget: "list"
+            allow_add: false
+            fields:
+              - {label: "Group Heading", name: "title", widget: "string"}
+              - label: "Pages"
+                name: "pages"
+                widget: "list"
+                fields:
+                  - {label: "Name", name: "title", widget: string}
+                  - {label: "Link", name: "url", widget: string, default: "/example.html"}

@@ -33,9 +33,6 @@ compress_html:
 
 # Ministries
 collections:
-  new:
+  pages:
     output: true
-  about:
-    output: true
-  connect:
-    output: true
+    permalink: /:path
