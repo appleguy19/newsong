@@ -8,7 +8,7 @@
 # Site settings
 title: Newsong
 
-description: > # this means to ignore newlines until "baseurl:"
+description: > # this means to ignore newlines until 'baseurl:'
   Following the way of Jesus, in authentic community, for the good of the world.
 baseurl:
 url: http://newsong.netlify.com
