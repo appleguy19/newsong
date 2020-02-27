@@ -19,8 +19,8 @@ collections:
       - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
       - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
       - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
-  - name: 'navigation'
-    label: 'Navigation'
+  - name: 'config'
+    label: 'Configuration'
     editor:
       preview: false
     files:
@@ -56,5 +56,11 @@ collections:
                     - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
                     - { label: 'Solid Black', value: 'solid-black' }
                 - {label: 'Text', name: text, widget: string}
-                - {label: 'Link', name: link, widget: string}
                 - {label: 'Image', name: image, widget: image}
+                - label: 'Linked Page'
+                  name: 'link'
+                  widget: 'relation'
+                  collection: 'pages'
+                  searchFields: ['title', 'url']
+                  valueField: 'url'
+                  displayFields: ['title']
