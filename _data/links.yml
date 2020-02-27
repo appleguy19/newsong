@@ -38,4 +38,4 @@ blocks:
   - text: What we Mean By<br />LOVE WINS
     image:
     link: love-wins.html
-    layout: solid-color
+    layout: solid-black
