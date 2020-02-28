@@ -1,41 +1,41 @@
 blocks:
-  - text: What to Expect
+  - title: What to Expect
     image: /public/img/what-to-expect-small.jpg
     link: what-to-expect.html
     layout: image-block
-  - text: Our Services
+  - title: Our Services
     image: /public/img/living-room-communion-side-hug-small.jpg
     link: our-services.html
     layout: image-block
-  - text: What we Believe
+  - title: What we Believe
     image: /public/img/what-we-believe-small.jpg
     link: what-we-believe.html
     layout: image-block
-  - text: Our Team
+  - title: Our Team
     image: /public/img/living-room-preaching-small.jpg
     link: our-team.html
     layout: image-block
-  - text: Sensory City
+  - title: Sensory City
     image:
     link: sensory.html
     layout: image-block
-  - text: Next Steps
+  - title: Next Steps
     image: /public/img/living-room-cello-small.jpg
     link: next-steps.html
     layout: image-block
-  - text: LifeGroups
+  - title: LifeGroups
     image: /public/img/living-room-families-small.jpg
     link: lifegroups.html
     layout: image-block
-  - text: Past Sermons
+  - title: Past Sermons
     image: /public/img/living-room-dave-preaching-small.jpg
     link: past-sermons.html
     layout: image-block
-  - text: Current Series
+  - title: Current Series
     image:
     link: current-series.html
     layout: custom-embed
-  - text: What we Mean By<br />LOVE WINS
+  - title: What we Mean By<br />LOVE WINS
     image:
     link: love-wins.html
     layout: solid-black
