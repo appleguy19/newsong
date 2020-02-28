@@ -5,6 +5,8 @@ groups:
         url: /what-to-expect.html
       - title: Our Services
         url: /our-services.html
+      - url: /test.html
+        title: Test Entry
   - title: About Us
     pages:
       - title: What we Believe
