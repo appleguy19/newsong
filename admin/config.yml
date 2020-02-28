@@ -76,10 +76,4 @@ collections:
                   - { label: 'Solid Black', value: 'solid-black' }
               - {label: 'Text', name: title, widget: string}
               - {label: 'Image', name: image, widget: image}
-              - label: 'Linked Page'
-                name: 'link'
-                widget: 'relation'
-                collection: 'pages'
-                searchFields: ['title', 'path']
-                valueField: 'slug'
-                displayFields: ['title']
+              - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
