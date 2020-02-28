@@ -16,27 +16,9 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image' }
       - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - label: 'Left Block'
-        name: 'left_link'
-        widget: 'relation'
-        collection: 'links'
-        searchFields: ['title', 'link']
-        valueField: 'link'
-        displayFields: ['title']
-      - label: 'Middle Block'
-        name: 'middle_link'
-        widget: 'relation'
-        collection: 'links'
-        searchFields: ['blocks.title', 'blocks.link']
-        valueField: 'blocks.link'
-        displayFields: ['blocks.title']
-      - label: 'Right Block'
-        name: 'right_link'
-        widget: 'relation'
-        collection: 'links'
-        searchFields: ['title', 'link']
-        valueField: 'link'
-        displayFields: ['title']
+      - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
+      - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
+      - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
   - name: 'config'
     label: 'Configuration'
     editor:
@@ -46,7 +28,7 @@ collections:
         name: 'navigation'
         file: '_data/navigation.yml'
         fields:
-          - label: 'Navigation Items'
+          - label: 'Navigation Groups'
             name: 'groups'
             widget: 'list'
             allow_add: false
