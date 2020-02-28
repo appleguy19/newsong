@@ -62,19 +62,23 @@ collections:
         name: 'link-blocks'
         file: '_data/links.yml'
         fields:
-          - label: 'Layout'
-            name: 'layout'
-            widget: 'select'
-            options:
-              - { label: 'Background Image', value: 'image-block' }
-              - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
-              - { label: 'Solid Black', value: 'solid-black' }
-          - {label: 'Text', name: text, widget: string}
-          - {label: 'Image', name: image, widget: image}
-          - label: 'Linked Page'
-            name: 'link'
-            widget: 'relation'
-            collection: 'pages'
-            searchFields: ['title', 'url']
-            valueField: 'url'
-            displayFields: ['title']
+          label: "Link Blocks"
+          name: "blocks"
+          widget: "object"
+          fields:
+            - label: 'Layout'
+              name: 'layout'
+              widget: 'select'
+              options:
+                - { label: 'Background Image', value: 'image-block' }
+                - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
+                - { label: 'Solid Black', value: 'solid-black' }
+            - {label: 'Text', name: text, widget: string}
+            - {label: 'Image', name: image, widget: image}
+            - label: 'Linked Page'
+              name: 'link'
+              widget: 'relation'
+              collection: 'pages'
+              searchFields: ['title', 'url']
+              valueField: 'url'
+              displayFields: ['title']
