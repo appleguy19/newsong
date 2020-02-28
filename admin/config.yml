@@ -53,6 +53,7 @@ collections:
             fields:
               - {label: 'Group Heading', name: 'title', widget: 'string'}
               - label: 'Pages'
+                singular_label: 'Page'
                 name: 'pages'
                 widget: 'list'
                 fields:
