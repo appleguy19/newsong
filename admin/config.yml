@@ -27,9 +27,9 @@ collections:
         name: 'middle_link'
         widget: 'relation'
         collection: 'links'
-        searchFields: ['title', 'link']
-        valueField: 'link'
-        displayFields: ['title']
+        searchFields: ['blocks.title', 'blocks.link']
+        valueField: 'blocks.link'
+        displayFields: ['blocks.title']
       - label: 'Right Block'
         name: 'right_link'
         widget: 'relation'
@@ -79,6 +79,6 @@ collections:
                 name: 'link'
                 widget: 'relation'
                 collection: 'pages'
-                searchFields: ['title', 'url']
-                valueField: 'url'
+                searchFields: ['title', 'path']
+                valueField: 'path'
                 displayFields: ['title']
