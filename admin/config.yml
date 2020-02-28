@@ -19,8 +19,8 @@ collections:
       - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
       - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
       - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
-  - name: 'navigation'
-    label: 'Navigation'
+  - name: 'config'
+    label: 'Configuration'
     editor:
       preview: false
     files:
@@ -28,15 +28,34 @@ collections:
         name: 'navigation'
         file: '_data/navigation.yml'
         fields:
-          - label: 'Navigation Items'
+          - label: 'Navigation Groups'
             name: 'groups'
             widget: 'list'
             allow_add: false
             fields:
               - {label: 'Group Heading', name: 'title', widget: 'string'}
               - label: 'Pages'
+                singular_label: 'Page'
                 name: 'pages'
                 widget: 'list'
                 fields:
                   - {label: 'Name', name: 'title', widget: string}
                   - {label: 'Link', name: 'url', widget: string, default: '/example.html'}
+      - label: 'Link Blocks'
+        name: 'links'
+        file: '_data/links.yml'
+        fields:
+          - label: 'Link Blocks'
+            name: 'blocks'
+            widget: 'list'
+            fields:
+              - label: 'Layout'
+                name: 'layout'
+                widget: 'select'
+                options:
+                  - { label: 'Background Image', value: 'image-block' }
+                  - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
+                  - { label: 'Solid Black', value: 'solid-black' }
+              - {label: 'Text', name: title, widget: string}
+              - {label: 'Image', name: image, widget: image}
+              - {label: 'Link', name: 'link', widget: string, default: 'example.html'}

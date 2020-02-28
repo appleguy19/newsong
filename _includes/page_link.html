@@ -1,60 +1,26 @@
-{% case include.link %}
-  {% when "what-we-believe.html" %}
-    <a href="/what-we-believe.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/what-we-believe-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">What we Believe</div>
-      </div>
-    </a>
-  {% when "what-to-expect.html" %}
-    <a href="/what-to-expect.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/what-to-expect-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">What to Expect</div>
-      </div>
-    </a>
-  {% when "our-services.html" %}
-    <a href="/our-services.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/living-room-communion-side-hug-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">Our Services</div>
-      </div>
-    </a>
-  {% when "next-steps.html" %}
-    <a href="/next-steps.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/living-room-cello-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">Next Steps</div>
-      </div>
-    </a>
-  {% when "past-sermons.html" %}
-    <a href="/past-sermons.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/living-room-dave-preaching-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">Past Sermons</div>
-      </div>
-    </a>
-  {% when "current-series.html" %}
-    <a href="/current-series.html" class="tile-button has-iframe-image is-square-tablet">
-      <div class="tile-button-inner">
-        <iframe title="Current Series Image" src="https://subsplash.com/+f947/embed/mi/*?video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        <div class="tile-button-iframe-cover"></div>
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">Current Series</div>
-      </div>
-    </a>
-  {% when "love-wins.html" %}
-    <a href="/love-wins.html" class="tile-button has-two-line-button is-black is-square-tablet">
-      <div class="tile-button-inner">
-        <div class="button is-multiline is-light is-outlined is-medium has-text-weight-bold">What we Mean By<br />LOVE WINS</div>
-      </div>
-    </a>
-  {% when "lifegroups.html" %}
-    <a href="/lifegroups.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/living-room-families-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">LifeGroups</div>
-      </div>
-    </a>
-  {% when "our-team.html" %}
-    <a href="/our-team.html" class="tile-button has-bg-image is-square-tablet" style="background-image: url(/public/img/living-room-preaching-small.jpg);">
-      <div class="tile-button-inner">
-        <div class="button is-light is-outlined is-medium has-text-weight-bold">Our Team</div>
-      </div>
-    </a>
-  {% else %}
+{% assign linkBlocks = (site.data.links.blocks | where:"link", {{include.link}}) %}
 
-{% endcase %}
+{% for item in linkBlocks  %}
+  {% case item.layout %}
+    {% when "custom-embed" %}
+      <a href="/{{ item.link }}" class="tile-button has-iframe-image is-square-tablet">
+        <div class="tile-button-inner">
+          <iframe title="Current Series Image" src="https://subsplash.com/+f947/embed/mi/*?video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="tile-button-iframe-cover"></div>
+          <div class="button is-light is-outlined is-medium has-text-weight-bold">{{ item.title }}</div>
+        </div>
+      </a>
+    {% when "solid-black" %}
+      <a href="/{{ item.link }}" class="tile-button has-two-line-button is-black is-square-tablet">
+        <div class="tile-button-inner">
+          <div class="button is-multiline is-light is-outlined is-medium has-text-weight-bold">{{ item.title }}</div>
+        </div>
+      </a>
+    {% when "image-block" %}
+      <a href="/{{ item.link }}" class="tile-button has-bg-image is-square-tablet" style="background-image: url({{ item.image }});">
+        <div class="tile-button-inner">
+          <div class="button is-light is-outlined is-medium has-text-weight-bold">{{ item.title }}</div>
+        </div>
+      </a>
+  {% endcase %}
+{% endfor %}
