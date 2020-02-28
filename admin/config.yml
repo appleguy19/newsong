@@ -81,5 +81,5 @@ collections:
                 widget: 'relation'
                 collection: 'pages'
                 searchFields: ['title', 'path']
-                valueField: '{{slug}}'
+                valueField: 'slug'
                 displayFields: ['title']
