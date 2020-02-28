@@ -19,24 +19,24 @@ collections:
       - label: 'Left Block'
         name: 'left_link'
         widget: 'relation'
-        collection: 'pages'
-        searchFields: ['title', 'url']
-        valueField: 'url'
-        displayFields: ['title']
+        collection: 'links'
+        searchFields: ['text', 'link']
+        valueField: 'link'
+        displayFields: ['text']
       - label: 'Middle Block'
         name: 'middle_link'
         widget: 'relation'
-        collection: 'pages'
-        searchFields: ['title', 'url']
-        valueField: 'url'
-        displayFields: ['title']
+        collection: 'links'
+        searchFields: ['text', 'link']
+        valueField: 'link'
+        displayFields: ['text']
       - label: 'Right Block'
         name: 'right_link'
         widget: 'relation'
-        collection: 'pages'
-        searchFields: ['title', 'url']
-        valueField: 'url'
-        displayFields: ['title']
+        collection: 'links'
+        searchFields: ['text', 'link']
+        valueField: 'link'
+        displayFields: ['text']
   - name: 'config'
     label: 'Configuration'
     editor:
@@ -62,23 +62,19 @@ collections:
         name: 'links'
         file: '_data/links.yml'
         fields:
-          - label: 'Link Blocks'
-            name: 'blocks'
-            widget: 'list'
-            fields:
-              - label: 'Layout'
-                name: 'layout'
-                widget: 'select'
-                options:
-                  - { label: 'Background Image', value: 'image-block' }
-                  - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
-                  - { label: 'Solid Black', value: 'solid-black' }
-              - {label: 'Text', name: text, widget: string}
-              - {label: 'Image', name: image, widget: image}
-              - label: 'Linked Page'
-                name: 'link'
-                widget: 'relation'
-                collection: 'pages'
-                searchFields: ['title', 'url']
-                valueField: 'url'
-                displayFields: ['title']
+          - label: 'Layout'
+            name: 'layout'
+            widget: 'select'
+            options:
+              - { label: 'Background Image', value: 'image-block' }
+              - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
+              - { label: 'Solid Black', value: 'solid-black' }
+          - {label: 'Text', name: text, widget: string}
+          - {label: 'Image', name: image, widget: image}
+          - label: 'Linked Page'
+            name: 'link'
+            widget: 'relation'
+            collection: 'pages'
+            searchFields: ['title', 'url']
+            valueField: 'url'
+            displayFields: ['title']
