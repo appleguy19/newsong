@@ -1,41 +1,40 @@
-blocks:
-  - title: What to Expect
-    image: /public/img/what-to-expect-small.jpg
-    link: what-to-expect.html
-    layout: image-block
-  - title: Our Services
-    image: /public/img/living-room-communion-side-hug-small.jpg
-    link: our-services.html
-    layout: image-block
-  - title: What we Believe
-    image: /public/img/what-we-believe-small.jpg
-    link: what-we-believe.html
-    layout: image-block
-  - title: Our Team
-    image: /public/img/living-room-preaching-small.jpg
-    link: our-team.html
-    layout: image-block
-  - title: Sensory City
-    image:
-    link: sensory.html
-    layout: image-block
-  - title: Next Steps
-    image: /public/img/living-room-cello-small.jpg
-    link: next-steps.html
-    layout: image-block
-  - title: LifeGroups
-    image: /public/img/living-room-families-small.jpg
-    link: lifegroups.html
-    layout: image-block
-  - title: Past Sermons
-    image: /public/img/living-room-dave-preaching-small.jpg
-    link: past-sermons.html
-    layout: image-block
-  - title: Current Series
-    image:
-    link: current-series.html
-    layout: custom-embed
-  - title: What we Mean By<br />LOVE WINS
-    image:
-    link: love-wins.html
-    layout: solid-black
+- title: What to Expect
+  image: /public/img/what-to-expect-small.jpg
+  link: what-to-expect.html
+  layout: image-block
+- title: Our Services
+  image: /public/img/living-room-communion-side-hug-small.jpg
+  link: our-services.html
+  layout: image-block
+- title: What we Believe
+  image: /public/img/what-we-believe-small.jpg
+  link: what-we-believe.html
+  layout: image-block
+- title: Our Team
+  image: /public/img/living-room-preaching-small.jpg
+  link: our-team.html
+  layout: image-block
+- title: Sensory City
+  image:
+  link: sensory.html
+  layout: image-block
+- title: Next Steps
+  image: /public/img/living-room-cello-small.jpg
+  link: next-steps.html
+  layout: image-block
+- title: LifeGroups
+  image: /public/img/living-room-families-small.jpg
+  link: lifegroups.html
+  layout: image-block
+- title: Past Sermons
+  image: /public/img/living-room-dave-preaching-small.jpg
+  link: past-sermons.html
+  layout: image-block
+- title: Current Series
+  image:
+  link: current-series.html
+  layout: custom-embed
+- title: What we Mean By<br />LOVE WINS
+  image:
+  link: love-wins.html
+  layout: solid-black
