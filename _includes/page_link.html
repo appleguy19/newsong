@@ -1,4 +1,4 @@
-{% assign linkBlocks = (site.data.links | where:"link", {{include.link}}) %}
+{% assign linkBlocks = (site.data.links.blocks | where:"link", {{include.link}}) %}
 
 {% for item in linkBlocks  %}
   {% case item.layout %}

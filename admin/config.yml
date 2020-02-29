@@ -45,13 +45,17 @@ collections:
         name: 'links'
         file: '_data/links.yml'
         fields:
-          - label: 'Layout'
-            name: 'layout'
-            widget: 'select'
-            options:
-              - { label: 'Background Image', value: 'image-block' }
-              - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
-              - { label: 'Solid Black', value: 'solid-black' }
-          - {label: 'Text', name: title, widget: string}
-          - {label: 'Image', name: image, widget: image}
-          - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
+          - label: 'Link Blocks'
+            name: 'blocks'
+            widget: 'list'
+            fields:
+              - label: 'Layout'
+                name: 'layout'
+                widget: 'select'
+                options:
+                  - { label: 'Background Image', value: 'image-block' }
+                  - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
+                  - { label: 'Solid Black', value: 'solid-black' }
+              - {label: 'Text', name: title, widget: string}
+              - {label: 'Image', name: image, widget: image}
+              - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
