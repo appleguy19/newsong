@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Next Steps
+permalink: /next-steps.html
 image: /public/img/living-room-cello.jpg
-left_link: our-services.html
-middle_link: current-series.html
-right_link: what-we-believe.html
+left_link: /our-services.html
+middle_link: /current-series.html
+right_link: /what-we-believe.html
 ---
 
 Next Steps is a 3-part experience that begins with a conversation in which Pastor Dave shares the overview of Newsong’s story and you get to meet some of our staff members and leaders. The 2nd &amp; 3rd experiences detail why we do what we do and how to get involved further. Each of these experiences are about an hour long and take place in our Common Ground area.

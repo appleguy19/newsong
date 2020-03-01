@@ -60,13 +60,12 @@ collections:
           - { label: 'Solid Black', value: 'solid-black' }
       - {label: 'Text', name: title, widget: string}
       - {label: 'Image', name: image, widget: image, required: false}
-      - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
       - label: 'Linked Page'
         name: 'link'
         widget: 'relation'
         collection: 'pages'
         searchFields: ['title']
-        valueField: '{{slug}}'
+        valueField: 'permalink'
         displayFields: ['title']
   - name: 'nav'
     label: 'Navigation'

@@ -1,10 +1,11 @@
 ---
 layout: page
 title: What to Expect
+permalink: /what-to-expect.html
 image: /public/img/living-room-epic-students-hugging.jpg
-left_link: our-services.html
-middle_link: current-series.html
-right_link: next-steps.html
+left_link: /our-services.html
+middle_link: /current-series.html
+right_link: /next-steps.html
 ---
 
   For many people, going to church is like being asked to step back into the 19th century. The music feels ancient and outdated, the sermon seems out of touch with reality, and the atmosphere is as rigid as the padless pews.

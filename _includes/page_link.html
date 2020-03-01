@@ -3,7 +3,7 @@
 {% for item in linkBlocks  %}
   {% case item.style %}
     {% when "custom-embed" %}
-      <a href="/{{ item.link }}" class="tile-button has-iframe-image is-square-tablet">
+      <a href="{{ item.link }}" class="tile-button has-iframe-image is-square-tablet">
         <div class="tile-button-inner">
           <iframe title="Current Series Image" src="https://subsplash.com/+f947/embed/mi/*?video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <div class="tile-button-iframe-cover"></div>
@@ -11,13 +11,13 @@
         </div>
       </a>
     {% when "solid-black" %}
-      <a href="/{{ item.link }}" class="tile-button has-two-line-button is-black is-square-tablet">
+      <a href="{{ item.link }}" class="tile-button has-two-line-button is-black is-square-tablet">
         <div class="tile-button-inner">
           <div class="button is-multiline is-light is-outlined is-medium has-text-weight-bold">{{ item.title }}</div>
         </div>
       </a>
     {% when "image-block" %}
-      <a href="/{{ item.link }}" class="tile-button has-bg-image is-square-tablet" style="background-image: url({{ item.image }});">
+      <a href="{{ item.link }}" class="tile-button has-bg-image is-square-tablet" style="background-image: url({{ item.image }});">
         <div class="tile-button-inner">
           <div class="button is-light is-outlined is-medium has-text-weight-bold">{{ item.title }}</div>
         </div>

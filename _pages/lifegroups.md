@@ -1,10 +1,11 @@
 ---
 layout: page
 title: LifeGroups
+permalink: /lifegroups.html
 image: /public/img/living-room-focus.jpg
-left_link: our-services.html
-middle_link: current-series.html
-right_link: past-sermons.html
+left_link: /our-services.html
+middle_link: /current-series.html
+right_link: /past-sermons.html
 ---
 
 <div class="notification">

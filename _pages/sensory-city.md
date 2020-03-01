@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Sensory City
+permalink: /sensory-city.html
 image: /public/img/sensory-toys.jpg
-left_link: what-to-expect.html
-middle_link: our-services.html
-right_link: lifegroups.html
+left_link: /what-to-expect.html
+middle_link: /our-services.html
+right_link: /lifegroups.html
 ---
 
 <h1 class="title is-size-5-mobile is-uppercase">

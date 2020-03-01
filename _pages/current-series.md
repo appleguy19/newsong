@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Current Series
+permalink: /current-series.html
 subsplash-embed: true
-left_link: our-services.html
-middle_link: what-we-believe.html
-right_link: past-sermons.html
+left_link: /our-services.html
+middle_link: /what-we-believe.html
+right_link: /past-sermons.html
 ---
 
 <iframe title="Current Series Sermon List" id="subsplash-embed-6572c65" frameborder="0" width="100%" height="1000" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
