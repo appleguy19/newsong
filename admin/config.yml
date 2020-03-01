@@ -61,6 +61,13 @@ collections:
       - {label: 'Text', name: title, widget: string}
       - {label: 'Image', name: image, widget: image, required: false}
       - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
+      - label: 'Linked Page'
+        name: 'link'
+        widget: 'relation'
+        collection: 'pages'
+        searchFields: ['title']
+        valueField: '{{slug}}'
+        displayFields: ['title']
   - name: 'nav'
     label: 'Navigation'
     editor:
