@@ -9,7 +9,7 @@ collections:
     label_singular: 'Page'
     folder: '_pages/'
     create: true
-    slug: {{slug}}
+    slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -26,7 +26,7 @@ collections:
     create: true
     editor:
       preview: false
-    slug: {{slug}}
+    slug: '{{slug}}'
     fields:
       - label: 'Layout'
         name: 'style'
