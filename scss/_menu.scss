@@ -26,6 +26,7 @@
 }
 .hero.is-dark .navbar.is-transparent .navbar-center .navbar-link {
   color: $dark-invert;
+  text-shadow: 0 1px 0 $dark;
 }
 .hero.is-dark .navbar.is-transparent .social-links a {
   color: $dark-invert;

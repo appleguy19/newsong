@@ -5,8 +5,6 @@ groups:
         url: /what-to-expect.html
       - title: Our Services
         url: /our-services.html
-      - url: /test.html
-        title: Test Entry
   - title: About Us
     pages:
       - title: What we Believe
@@ -16,7 +14,7 @@ groups:
   - title: Connect
     pages:
       - title: Sensory City
-        url: /sensory.html
+        url: /sensory-city.html
       - title: Next Steps
         url: /next-steps.html
       - title: LifeGroups
