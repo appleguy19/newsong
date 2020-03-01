@@ -9,13 +9,15 @@ collections:
     label_singular: 'Page'
     folder: '_pages/'
     create: true
+    editor:
+      preview: false
     slug: '{{slug}}'
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image' }
-      - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Image', name: 'image', widget: 'image', required: 'false' }
+      - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean', required: 'false' }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: 'false' }
       - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
       - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
       - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
@@ -36,7 +38,7 @@ collections:
           - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
           - { label: 'Solid Black', value: 'solid-black' }
       - {label: 'Text', name: title, widget: string}
-      - {label: 'Image', name: image, widget: image}
+      - {label: 'Image', name: image, widget: image, required: 'false'}
       - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
   - name: 'nav'
     label: 'Navigation'
