@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What to Expect
-image: living-room-epic-students-hugging.jpg
+image: /public/img/living-room-epic-students-hugging.jpg
 left_link: our-services.html
 middle_link: current-series.html
 right_link: next-steps.html

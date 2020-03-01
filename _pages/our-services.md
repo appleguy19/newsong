@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Our Services
-image: living-room-worship.jpg
+image: /public/img/living-room-worship.jpg
 left_link: what-to-expect.html
 middle_link: current-series.html
 right_link: past-sermons.html

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Sensory City
-image: sensory-toys.jpg
+image: /public/img/sensory-toys.jpg
 left_link: what-to-expect.html
 middle_link: our-services.html
 right_link: lifegroups.html

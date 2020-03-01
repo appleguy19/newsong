@@ -5,7 +5,7 @@ layout: default
 <section class="hero is-dark">
   {% include nav.html %}
 </section>
-{% if page.image %}<section class="section has-bg-image section-top-image" style="background-image: url(/public/img/{{ page.image }})"></section>{% endif %}
+{% if page.image %}<section class="section has-bg-image section-top-image" style="background-image: url({{ page.image }})"></section>{% endif %}
 <section class="hero is-primary">
   <div class="hero-body">
     <div class="container is-widescreen has-text-centered">

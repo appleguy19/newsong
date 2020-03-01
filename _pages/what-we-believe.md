@@ -1,7 +1,7 @@
 ---
 layout: page
 title: What We Believe
-image: living-room-lindsey-preaching.jpg
+image: /public/img/living-room-lindsey-preaching.jpg
 left_link: our-services.html
 middle_link: current-series.html
 right_link: past-sermons.html

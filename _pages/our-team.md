@@ -1,7 +1,7 @@
 ---
 layout: team
 title: Our Team
-image: living-room-wide-u.jpg
+image: /public/img/living-room-wide-u.jpg
 left_link: what-we-believe.html
 middle_link: love-wins.html
 right_link: what-to-expect.html

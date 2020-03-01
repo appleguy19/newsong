@@ -1,7 +1,7 @@
 ---
 layout: page
 title: LifeGroups
-image: living-room-focus.jpg
+image: /public/img/living-room-focus.jpg
 left_link: our-services.html
 middle_link: current-series.html
 right_link: past-sermons.html

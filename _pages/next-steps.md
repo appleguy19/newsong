@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Next Steps
-image: living-room-cello.jpg
+image: /public/img/living-room-cello.jpg
 left_link: our-services.html
 middle_link: current-series.html
 right_link: what-we-believe.html
