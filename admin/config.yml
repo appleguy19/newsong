@@ -15,9 +15,9 @@ collections:
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Image', name: 'image', widget: 'image', required: 'false' }
-      - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean', required: 'false' }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: 'false' }
+      - { label: 'Image', name: 'image', widget: 'image', required: false }
+      - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean', required: false }
+      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
       - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
       - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
       - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
@@ -38,7 +38,7 @@ collections:
           - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
           - { label: 'Solid Black', value: 'solid-black' }
       - {label: 'Text', name: title, widget: string}
-      - {label: 'Image', name: image, widget: image, required: 'false'}
+      - {label: 'Image', name: image, widget: image, required: false}
       - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
   - name: 'nav'
     label: 'Navigation'
