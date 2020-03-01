@@ -18,9 +18,30 @@ collections:
       - { label: 'Image', name: 'image', widget: 'image', required: false }
       - { label: 'Contains Subsplash Embed', name: 'subsplash-embed', widget: 'boolean', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown', required: false }
-      - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
-      - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
-      - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
+      - label: 'Left Link Block'
+        name: 'left_link'
+        required: false
+        widget: 'relation'
+        collection: 'blocks'
+        searchFields: ['title', 'link']
+        valueField: 'link'
+        displayFields: ['title']
+      - label: 'Middle Link Block'
+        name: 'middle_link'
+        required: false
+        widget: 'relation'
+        collection: 'blocks'
+        searchFields: ['title', 'link']
+        valueField: 'link'
+        displayFields: ['title']
+      - label: 'Right Link Block'
+        name: 'right_link'
+        required: false
+        widget: 'relation'
+        collection: 'blocks'
+        searchFields: ['title', 'link']
+        valueField: 'link'
+        displayFields: ['title']
   - name: 'blocks'
     label: 'Link Blocks'
     label_singular: 'Link Block'
