@@ -36,3 +36,5 @@ collections:
   pages:
     output: true
     permalink: /:path
+  blocks:
+    sort_by: style

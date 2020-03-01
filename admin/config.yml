@@ -6,10 +6,10 @@ logo_url: '/public/img/nf-fav.png'
 collections:
   - name: 'pages'
     label: 'Pages'
+    label_singular: 'Page'
     folder: '_pages/'
     create: true
-    editor:
-      preview: false
+    slug: {{slug}}
     fields:
       - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'page' }
       - { label: 'Title', name: 'title', widget: 'string' }
@@ -19,12 +19,31 @@ collections:
       - { label: 'Left Link', name: 'left_link', widget: 'string', default: 'example.html' }
       - { label: 'Middle Link', name: 'middle_link', widget: 'string', default: 'example.html' }
       - { label: 'Right Link', name: 'right_link', widget: 'string', default: 'example.html' }
-  - name: 'config'
-    label: 'Configuration'
+  - name: 'blocks'
+    label: 'Link Blocks'
+    label_singular: 'Link Block'
+    folder: '_blocks/'
+    create: true
+    editor:
+      preview: false
+    slug: {{slug}}
+    fields:
+      - label: 'Layout'
+        name: 'style'
+        widget: 'select'
+        options:
+          - { label: 'Background Image', value: 'image-block' }
+          - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
+          - { label: 'Solid Black', value: 'solid-black' }
+      - {label: 'Text', name: title, widget: string}
+      - {label: 'Image', name: image, widget: image}
+      - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
+  - name: 'nav'
+    label: 'Navigation'
     editor:
       preview: false
     files:
-      - label: 'Top Navigation'
+      - label: 'Top Navigation Menu'
         name: 'navigation'
         file: '_data/navigation.yml'
         fields:
@@ -41,21 +60,3 @@ collections:
                 fields:
                   - {label: 'Name', name: 'title', widget: string}
                   - {label: 'Link', name: 'url', widget: string, default: '/example.html'}
-      - label: 'Link Blocks'
-        name: 'links'
-        file: '_data/links.yml'
-        fields:
-          - label: 'Link Blocks'
-            name: 'blocks'
-            widget: 'list'
-            fields:
-              - label: 'Layout'
-                name: 'layout'
-                widget: 'select'
-                options:
-                  - { label: 'Background Image', value: 'image-block' }
-                  - { label: 'Custom Subsplash Embed', value: 'custom-embed' }
-                  - { label: 'Solid Black', value: 'solid-black' }
-              - {label: 'Text', name: title, widget: string}
-              - {label: 'Image', name: image, widget: image}
-              - {label: 'Link', name: 'link', widget: string, default: 'example.html'}
