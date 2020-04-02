@@ -49,7 +49,7 @@
   position: absolute;
   left: calc(50% - 1.5rem);
   top: 1.6rem;
-  z-index: 3;
+  z-index: 6;
 
   .navbar-logo-image {
     height: 3rem;
@@ -57,7 +57,7 @@
 }
 
 .navbar-burger.burger {
-  z-index: 3;
+  z-index: 6;
 }
 .navbar-burger span {
   height: 2px;
@@ -74,7 +74,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 5;
 
   &.is-active {
     display: block;
