@@ -69,6 +69,10 @@
   border-radius: 50%;
 }
 
+.is-strikethrough {
+  text-decoration: line-through;
+}
+
 .section.is-dark {
   background-color: $dark;
   color: $dark-invert;
