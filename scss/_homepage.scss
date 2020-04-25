@@ -46,9 +46,28 @@
   }
 
 }
-
 .learn-more--left {
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.learn-more--about {
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: repeating-linear-gradient(-45deg,
+    #e5e5e5 /* can't skip this, repeating gradient won't work */,
+    #e5e5e5 2px,
+    transparent 0,
+    transparent 9px /* can't skip this either, tells where gradient repetition starts */);
+  @include tablet {
+    padding: 1.6rem 1rem;
+  }
+  @include desktop {
+    padding: 6rem 1rem;
+  }
 }
 .learn-more--right  {
   display: block;
@@ -56,16 +75,23 @@
     min-height: 50%;
   }
 }
+.learn-more--signup {
+  justify-self: flex-end;
+  padding: 2rem 1rem;
+  border-top: 2px solid $black;
+  @include tablet {
+    max-height: 450px;
+  }
+}
 
-.learn-more--left,
 .learn-more--right .tile-button-inner {
   padding: 3rem 1.5rem;
   @include desktop {
-    //padding-top: 6rem;
-    //padding-bottom: 6rem;
+    // padding-top: 6rem;
+    // padding-bottom: 6rem;
   }
   @include fullhd {
-    //padding: 8rem 6rem;
+    // padding: 8rem 6rem;
   }
 }
 .learn-more--right .tile-button-inner {
