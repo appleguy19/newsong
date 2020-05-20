@@ -1,0 +1,17 @@
+pastors:
+  - name: Dave Romoser
+    email: dave.romoser@newsong-fellowship.com
+    title: Lead Pastor
+    photo: /public/img/dave-romoser.jpg
+  - name: Tim Giltner
+    email: tim.giltner@newsong-fellowship.com
+    title: Executive Pastor
+    photo: /public/img/tim-giltner.jpg
+  - name: Lindsey Apple
+    email: lindsey.apple@newsong-fellowship.com
+    title: Associate Pastor
+    photo: /public/img/lindsey-apple.jpg
+  - name: Grant Romoser-Claunch
+    email: grant.claunch@newsong-fellowship.com
+    title: Pastor of Discipleship
+    photo: /public/img/grant-claunch.jpg

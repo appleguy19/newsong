@@ -2,7 +2,7 @@
 layout: team
 title: Our Team
 permalink: /our-team.html
-image: /public/img/living-room-wide-u.jpg
+image:
 left_link: /what-we-believe.html
 middle_link: /love-wins.html
 right_link: /what-to-expect.html

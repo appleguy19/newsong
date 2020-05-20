@@ -89,3 +89,44 @@ collections:
                 fields:
                   - {label: 'Name', name: 'title', widget: string}
                   - {label: 'Link', name: 'url', widget: string, default: '/example.html'}
+  - name: 'people'
+    label: 'People'
+    editor:
+      preview: false
+    files:
+      - label: 'Pastors'
+        name: 'pastors'
+        file: '_data/pastors.yml'
+        fields:
+          - label: 'Pastors'
+            name: 'pastors'
+            widget: 'list'
+            allow_add: false
+            fields:
+              - {label: 'Name', name: 'name', widget: 'string'}
+              - {label: 'Email', name: 'email', widget: string, default: 'example@newsong-fellowship.com'}
+              - {label: 'Title', name: 'title', widget: string}
+              - {label: 'Photo', name: 'photo', widget: image}
+      - label: 'Staff'
+        name: 'staff'
+        file: '_data/staff.yml'
+        fields:
+          - label: 'Staff'
+            name: 'staff'
+            widget: 'list'
+            allow_add: false
+            fields:
+              - {label: 'Name', name: 'name', widget: 'string'}
+              - {label: 'Email', name: 'email', widget: string, default: 'example@newsong-fellowship.com'}
+              - {label: 'Photo', name: 'photo', widget: image}
+      - label: 'Elders'
+        name: 'elders'
+        file: '_data/elders.yml'
+        fields:
+          - label: 'Elders'
+            name: 'elders'
+            widget: 'list'
+            allow_add: false
+            fields:
+              - {label: 'Name', name: 'name', widget: 'string'}
+              - {label: 'Photo', name: 'photo', widget: image}
