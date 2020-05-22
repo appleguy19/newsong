@@ -4,7 +4,7 @@ staff:
     photo: /public/img/kristina-heckelman.jpg
   - name: Becky Jones
     email: becky.jones@newsong-fellowship.com
-    photo:
+    photo: /public/img/becky-jones.jpg
   - name: Kelly Romoser
     email: kelly.romoser@newsong-fellowship.com
     photo: /public/img/kelly-romoser.jpg
