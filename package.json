@@ -21,7 +21,7 @@
     "browser-sync": "^2.18.13",
     "bulma": "^0.6.0",
     "imageoptim-cli": ">1.15.1",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.12.1",
     "postcss-cli": "^4.1.1"
   }
