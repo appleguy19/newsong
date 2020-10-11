@@ -12,7 +12,7 @@ right_link: /past-sermons.html
   <h3 class="title is-size-3">Looking for LifeGroup specifics?</h3>
     The fastest way to find information like meeting times, locations, and whether childcare is provided is to use the Newsong App.<br/>
     <p class="has-text-right">
-      <a class="button is-primary is-outlined is-medium has-text-weight-bold" href="http://subsplash.com/newsong/app">Download Our App Now</a>
+      <a class="button is-primary is-outlined is-medium has-text-weight-bold" href="http://subsplash.com/newsong">Download Our App Now</a>
     </p>
 </div>
 
