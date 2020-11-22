@@ -14,8 +14,13 @@
     }
   }
 
-  &.is-black .ankle-links a:hover {
-    color: $primary;
+
+  &.is-black .ankle-links a {
+    color: $light;
+
+    &:hover {
+      color: $primary;
+    }
   }
 
   .ankle-logo {
