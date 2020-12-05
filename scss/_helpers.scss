@@ -9,6 +9,27 @@
       background-attachment: fixed;
     }
   }
+
+  .photo-credit {
+    background: rgba(0,0,0,.5);
+    border-radius: 0 2px 0 0;
+    box-sizing: border-box;
+    color: $white;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: right;
+    opacity: 0.7;
+    overflow: hidden;
+    padding: 2px 4px;
+    text-decoration: underline;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    float: right;
+
+    a {
+      color: $white;
+    }
+  }
 }
 
 .is-visually-hidden {
