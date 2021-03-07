@@ -57,6 +57,9 @@ layout: default
             {% endif %}
           </figure>
           <h2 class="is-size-3">{{ staff.name }}</h2>
+          {% if staff.title %}
+            <h4 class="subtitle is-marginless">{{ staff.title }}</h4>
+          {% endif %}
           <a href="mailto:{{ staff.email }}">{{ staff.email }}</a>
         </div>
       {% endfor %}

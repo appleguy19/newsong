@@ -105,3 +105,24 @@
     margin-top: -30%;
   }
 }
+
+
+.christmas-banner {
+  .title {
+    text-shadow: -1px 1px 3px $light,
+				  1px 1px 3px $light,
+				  1px -1px 0 $light,
+				  -1px -1px 0 $light;
+    @include tablet {
+      text-shadow: none;
+    }
+  }
+
+  &--image {
+    display: none;
+    @include tablet {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}

@@ -1,10 +1,13 @@
 staff:
   - name: Kristina Heckelman
     email: kristina.heckelman@newsong-fellowship.com
+    title: Ministry Directory
     photo: /public/img/kristina-heckelman.jpg
   - name: Becky Jones
     email: becky.jones@newsong-fellowship.com
+    title: Administrative Assistant
     photo: /public/img/becky-jones.jpg
   - name: Kelly Romoser
     email: kelly.romoser@newsong-fellowship.com
+    title: Administrative and Creative Director
     photo: /public/img/kelly-romoser.jpg
