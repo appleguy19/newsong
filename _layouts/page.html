@@ -7,7 +7,9 @@ layout: default
 </section>
 {% if page.image %}
 <section class="section has-bg-image section-top-image" style="background-image: url({{ page.image }})">
-  {% include notification.html %}
+  <div class="container is-widescreen">
+    {% include notification.html %}
+  </div>
 </section>
 {% endif %}
 <section class="hero is-primary">
