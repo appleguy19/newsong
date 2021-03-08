@@ -29,7 +29,7 @@
   text-shadow: 0 1px 0 $dark;
 }
 .hero.is-dark .navbar.is-transparent .social-links a {
-  color: $dark-invert;
+  color: $dark-invert !important;
   font-size: 1.5rem;
   margin: 0 .5rem;
 
