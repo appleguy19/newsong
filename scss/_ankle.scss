@@ -14,14 +14,16 @@
     }
   }
 
+  &.is-black .level-item {
+    a.ankle-link {
+      color: $light;
 
-  &.is-black .ankle-links a {
-    color: $light;
-
-    &:hover {
-      color: $primary;
+      &:hover {
+        color: $primary !important;
+      }
     }
   }
+
 
   .ankle-logo {
     margin-bottom: 3rem;

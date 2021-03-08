@@ -25,7 +25,7 @@
 
 }
 .hero.is-dark .navbar.is-transparent .navbar-center .navbar-link {
-  color: $dark-invert;
+  color: $dark-invert !important;
   text-shadow: 0 1px 0 $dark;
 }
 .hero.is-dark .navbar.is-transparent .social-links a {
@@ -45,16 +45,18 @@
     background-color: $white-ter !important;
   }
 }
-.navbar-logo {
-  position: absolute;
-  left: calc(50% - 1.5rem);
-  top: 1.6rem;
-  z-index: 6;
+
+.navbar-center-spacer {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 
   .navbar-logo-image {
-    height: 3rem;
+    height: 48px;
+    max-height:100%;
   }
 }
+
 
 .navbar-burger.burger {
   z-index: 6;

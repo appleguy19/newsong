@@ -29,7 +29,11 @@
       <div class="navbar-center">
         {% for group in site.data.navigation.groups %}
         {% if forloop.index == 3 %}
-        <div class="navbar-item navbar-center-spacer"></div>
+        <div class="navbar-item navbar-center-spacer">
+          <a href="/">
+            <img src="/public/img/nf-white-transparent.png" alt="Newsong Logo" class="navbar-logo-image">
+          </a>
+        </div>
         {% endif %}
         <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
           <a class="navbar-link">
@@ -53,11 +57,4 @@
       </div>
     </div>
   </nav>
-  <div class="level navbar-logo">
-    <div class="level-item">
-      <a href="/">
-        <img src="/public/img/nf-white-transparent.png" alt="Newsong Logo" class="navbar-logo-image">
-      </a>
-    </div>
-  </div>
 </div>
