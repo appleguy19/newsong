@@ -14,9 +14,16 @@
     }
   }
 
-  &.is-black .ankle-links a:hover {
-    color: $primary;
+  &.is-black .level-item {
+    a.ankle-link {
+      color: $light;
+
+      &:hover {
+        color: $primary !important;
+      }
+    }
   }
+
 
   .ankle-logo {
     margin-bottom: 3rem;

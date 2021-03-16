@@ -19,17 +19,21 @@
   </aside>
   <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <div class="navbar-burger burger" data-target="mobileNavMenu" role="button" aria-label="menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <a role="button" class="navbar-burger" data-target="mobileNavMenu" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
     <div id="navMenu" class="navbar-menu">
       <div class="navbar-center">
         {% for group in site.data.navigation.groups %}
         {% if forloop.index == 3 %}
-        <div class="navbar-item navbar-center-spacer"></div>
+        <div class="navbar-item navbar-center-spacer">
+          <a href="/">
+            <img src="/public/img/nf-white-transparent.png" alt="Newsong Logo" class="navbar-logo-image">
+          </a>
+        </div>
         {% endif %}
         <div class="navbar-item has-dropdown is-hoverable has-text-weight-bold">
           <a class="navbar-link">
@@ -53,11 +57,4 @@
       </div>
     </div>
   </nav>
-  <div class="level navbar-logo">
-    <div class="level-item">
-      <a href="/">
-        <img src="/public/img/nf-white-transparent.png" alt="Newsong Logo" class="navbar-logo-image">
-      </a>
-    </div>
-  </div>
 </div>

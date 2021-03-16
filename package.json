@@ -17,12 +17,12 @@
     "img-compress": "imageoptim -a 'public/img'"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.5",
-    "browser-sync": "^2.18.13",
-    "bulma": "^0.6.0",
-    "imageoptim-cli": ">1.15.1",
-    "node-sass": "^4.5.3",
-    "nodemon": "^1.12.1",
-    "postcss-cli": "^4.1.1"
+    "autoprefixer": "^10.0.1",
+    "bulma": "0.9.0",
+    "imageoptim-cli": "3.0.2",
+    "node-sass": "^4.14.1",
+    "nodemon": "2.0.4",
+    "postcss": "^8.1.1",
+    "postcss-cli": "8.0.0"
   }
 }

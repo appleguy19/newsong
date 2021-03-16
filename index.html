@@ -4,9 +4,9 @@ layout: default
 
 <section class="hero is-dark is-fullheight has-text-centered has-bg-image has-bg-image--fixed splash" style="background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url(/public/img/splash.jpg)">
   {% include nav.html %}
-  {% include notification.html %}
   <div class="hero-body splash-body">
     <div class="container is-widescreen">
+      {% include notification.html %}
       <img src="/public/img/welcome.png" alt="Welcome" class="splash-body--hand-drawn-welcome"  />
       <h1 class="title is-size-1 is-size-3-mobile is-uppercase">
         <span class="is-visually-hidden">Welcome</span>to our Living Room
@@ -78,21 +78,21 @@ layout: default
 <section class="ankle hero is-black">
   <div class="hero-head">
     <div class="container is-widescreen has-text-centered">
-      <nav class="ankle-links level is-hidden-mobile">
+      <nav class="level is-hidden-mobile">
         <p class="level-item has-text-centered has-text-weight-bold">
-          <a class="link" href="/what-to-expect.html">What to Expect</a>
+          <a class="link ankle-link" href="/what-to-expect.html">What to Expect</a>
         </p>
         <p class="level-item has-text-centered has-text-weight-bold">
-          <a class="link" href="/our-team.html">Our Team</a>
+          <a class="link ankle-link" href="/our-team.html">Our Team</a>
         </p>
         <p class="level-item has-text-centered has-text-weight-bold">
-          <a class="link" href="/next-steps.html">Next Steps</a>
+          <a class="link ankle-link" href="/next-steps.html">Next Steps</a>
         </p>
         <p class="level-item has-text-centered has-text-weight-bold">
-          <a class="link" href="/past-sermons.html">Past Sermons</a>
+          <a class="link ankle-link" href="/past-sermons.html">Past Sermons</a>
         </p>
         <p class="level-item has-text-centered has-text-weight-bold">
-          <a class="link" href="/giving.html">Give</a>
+          <a class="link ankle-link" href="/giving.html">Give</a>
         </p>
       </nav>
     </div>
