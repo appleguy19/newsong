@@ -6,6 +6,17 @@
   justify-content: center;
   margin-top: 1rem;
 }
+.hero.splash {
+  background-image: linear-gradient(to top,rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2)),url(/public/img/splash--mobile.jpg);
+
+  @include tablet {
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url(/public/img/splash--tablet.jpg);
+  }
+
+  @include desktop {
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.4)),url(/public/img/splash.jpg);
+  }
+}
 
 .splash-head {
   padding: 1.5rem;
