@@ -4,34 +4,33 @@
 
 This is the repo for Newsong's new website.
 
-
 ### For Developers
 
 To work on the Newsong website you should be familiar with the following technologies:
 
- - Yarn
- - Git
- - SCSS
- - HTML
- - JavaScript
+- Yarn
+- Git
+- SCSS
+- HTML
+- JavaScript
 
 #### Grab the Code
 
 0. Install and [configure Git](https://help.github.com/articles/set-up-git/)
 
-0. [Set up an SSH key](https://help.github.com/articles/generating-ssh-keys/)
+1. [Set up an SSH key](https://help.github.com/articles/generating-ssh-keys/)
 
-0. Clone the repository: `git clone git@github.com:appleguy19/newsong.git`
+2. Clone the repository: `git clone git@github.com:appleguy19/newsong.git`
 
 #### Set up Software
 
 0. Install [Homebrew](http://brew.sh/)
 
-0. Install Node via Homebrew: `brew install node`
+1. Install Node via Homebrew: `brew install node`
 
-0. Install Yarn via Homebrew: `brew install yarn`
+2. Install Yarn via Homebrew: `brew install yarn`
 
-0. `cd` to this directory and install dependencies: `yarn`
+3. `cd` to this directory and install dependencies: `yarn install`
 
 ### Running the Scripts
 
@@ -39,19 +38,19 @@ Everything you need to build this site can be done with Yarn Scripts and bundler
 
 0. Compile and begin watching Sass/SCSS: `yarn run css-watch`
 
-0. To build for production: `yarn run css-build && bundle exec jekyll build`
+1. To build for production: `yarn run css-build && bundle exec jekyll build`
 
 ### Deploying this website
 
 0. Create a branch.
 
-0. Commit changes to that branch.
+1. Commit changes to that branch.
 
-0. Create a Pull Request (into `master`). Remember to reference a Github Issue if there is one.
+2. Create a Pull Request (into `master`). Remember to reference a Github Issue if there is one.
 
-0. Merge into `master`.
+3. Merge into `master`.
 
-0. The site will be automatically deployed via [Netlify](https://netlify.com) to https://newsong.netlify.com *and very soon to the actual public URL*
+4. The site will be automatically deployed via [Netlify](https://netlify.com) to https://newsong.netlify.com _and very soon to the actual public URL_
 
 #### Git Hooks
 
