@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<section class="hero is-dark is-fullheight has-text-centered has-bg-image has-bg-image--fixed splash" style="">
-  {% include nav.html %}
-  {% include notification.html %}
+<section
+  class="hero is-dark is-fullheight has-text-centered has-bg-image has-bg-image--fixed splash"
+  style=""
+>
+  {% include nav.html %} {% include notification.html %}
   <div class="hero-body splash-body">
     <div class="container is-widescreen">
-      <img src="/public/img/welcome.png" alt="Welcome" class="splash-body--hand-drawn-welcome"  />
+      <img
+        src="/public/img/welcome.png"
+        alt="Welcome"
+        class="splash-body--hand-drawn-welcome"
+      />
       <h1 class="title is-size-1 is-size-3-mobile is-uppercase">
         <span class="is-visually-hidden">Welcome</span>to our Living Room
       </h1>
@@ -21,7 +27,7 @@ layout: default
         <div class="level-item has-text-left-tablet splash-body--times">
           <p class="has-text-weight-bold">
             Sundays <br />
-            11:00
+            at 11:00am
           </p>
         </div>
       </div>
@@ -29,51 +35,104 @@ layout: default
   </div>
 </section>
 <section class="learn-more columns is-gapless is-marginless has-text-centered">
-    <div class="column has-text-centered learn-more--left">
-      <div class="tile-button-inner learn-more--about">
-        <h3 class="title is-size-6 is-uppercase">About Us</h3>
-        <p class="title is-size-5 is-size-4-tablet is-size-3-desktop">At Newsong we're discovering what it means<wbr> to follow the way of Jesus,<wbr> in authentic community,<wbr> for the good of the world.</p>
-          <!-- <a href="/what-we-believe.html" class="button is-primary">Learn more &rarr;</a> -->
+  <div class="column has-text-centered learn-more--left">
+    <div class="tile-button-inner learn-more--about">
+      <h3 class="title is-size-6 is-uppercase">About Us</h3>
+      <p class="title is-size-5 is-size-4-tablet is-size-3-desktop">
+        At Newsong we're discovering what it means<wbr /> to follow the way of
+        Jesus,<wbr /> in authentic community,<wbr /> for the good of the world.
+      </p>
+      <!-- <a href="/what-we-believe.html" class="button is-primary">Learn more &rarr;</a> -->
+    </div>
+    <div class="learn-more--signup">
+      <strong>Want to stay in touch? Sign up for our family newsletter</strong>
+      <!-- Begin Mailchimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form
+          action="https://newsong-fellowship.us12.list-manage.com/subscribe/post?u=6fea55c5db071dae98a3c3c2a&amp;id=1bd2899596"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div class="field has-addons">
+            <div class="mc-field-group control has-icons-left">
+              <input
+                name="EMAIL"
+                id="mce-EMAIL"
+                class="input required email is-medium"
+                type="email"
+                placeholder="Email"
+              />
+              <span class="icon is-medium is-left">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </div>
+            <div class="control">
+              <input
+                type="submit"
+                value="Subscribe"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="button is-primary is-medium"
+              />
+            </div>
+          </div>
+          <div id="mce-responses" class="clear">
+            <div
+              class="response"
+              id="mce-error-response"
+              style="display: none;"
+            ></div>
+            <div
+              class="response"
+              id="mce-success-response"
+              style="display: none;"
+            ></div>
+          </div>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input
+              type="text"
+              name="b_6fea55c5db071dae98a3c3c2a_1bd2899596"
+              tabindex="-1"
+              value=""
+            />
+          </div>
+        </form>
       </div>
-      <div class="learn-more--signup">
-        <strong>Want to stay in touch? Sign up for our family newsletter</strong>
-        <!-- Begin Mailchimp Signup Form -->
-        <div id="mc_embed_signup">
-         <form action="https://newsong-fellowship.us12.list-manage.com/subscribe/post?u=6fea55c5db071dae98a3c3c2a&amp;id=1bd2899596" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-           <div class="field has-addons">
-             <div class="mc-field-group control has-icons-left">
-               <input name="EMAIL" id="mce-EMAIL" class="input required email is-medium" type="email" placeholder="Email">
-               <span class="icon is-medium is-left">
-                 <i class="fa fa-envelope"></i>
-               </span>
-             </div>
-             <div class="control">
-               <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button is-primary is-medium">
-             </div>
-           </div>
-           <div id="mce-responses" class="clear">
-             <div class="response" id="mce-error-response" style="display:none"></div>
-             <div class="response" id="mce-success-response" style="display:none"></div>
-           </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6fea55c5db071dae98a3c3c2a_1bd2899596" tabindex="-1" value=""></div>
-         </form>
+      <!--End mc_embed_signup-->
+    </div>
+  </div>
+  <div class="column is-5">
+    <a
+      href="/what-to-expect.html"
+      title="Sunday Services"
+      class="tile-button tile-button--custom learn-more--right has-bg-image"
+      style="background-image: url(/public/img/living-room-wide-u.jpg);"
+    >
+      <div class="tile-button-inner">
+        <div class="button is-light is-outlined is-medium has-text-weight-bold">
+          What can I expect?
         </div>
-        <!--End mc_embed_signup-->
+      </div>
+    </a>
+    <div class="inline-video">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/ul3Tqlbdd4A"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          webkitAllowFullScreen
+          mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+        <!-- <iframe src="https://player.vimeo.com/video/240543481?title=0&byline=0&portrait=0&color=8DC63F" frameborder="0"  webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
       </div>
     </div>
-    <div class="column is-5">
-      <a href="/what-to-expect.html" title="Sunday Services" class="tile-button tile-button--custom learn-more--right has-bg-image" style="background-image: url(/public/img/living-room-wide-u.jpg);">
-        <div class="tile-button-inner">
-          <div class="button is-light is-outlined is-medium has-text-weight-bold">What can I expect?</div>
-        </div>
-      </a>
-      <div class="inline-video">
-        <div class="video-container">
-          <iframe src="https://www.youtube-nocookie.com/embed/ul3Tqlbdd4A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  webkitAllowFullScreen mozallowfullscreen allowfullscreen></iframe>
-          <!-- <iframe src="https://player.vimeo.com/video/240543481?title=0&byline=0&portrait=0&color=8DC63F" frameborder="0"  webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> -->
-        </div>
-      </div>
-    </div>
+  </div>
 </section>
 <section class="ankle hero is-black">
   <div class="hero-head">
@@ -100,14 +159,23 @@ layout: default
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title is-size-1 is-love-wins is-uppercase">Love Wins.</h1>
-      <p class="content">This has been our motto and mantra for over 10 years. It is an affirmation that reflects the truest nature of the God who is for all people, is on their side, and wants them to find their deepest sense of belonging and joy in His love.</p>
-      <a href="/love-wins.html" class="ankle-cta button is-light is-outlined is-large">Learn More</a>
+      <p class="content">
+        This has been our motto and mantra for over 10 years. It is an
+        affirmation that reflects the truest nature of the God who is for all
+        people, is on their side, and wants them to find their deepest sense of
+        belonging and joy in His love.
+      </p>
+      <a
+        href="/love-wins.html"
+        class="ankle-cta button is-light is-outlined is-large"
+        >Learn More</a
+      >
     </div>
   </div>
 </section>
 <script>
   if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
+    window.netlifyIdentity.on("init", (user) => {
       if (!user) {
         window.netlifyIdentity.on("login", () => {
           document.location.href = "/admin/";
