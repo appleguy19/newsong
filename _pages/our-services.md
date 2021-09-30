@@ -18,4 +18,4 @@ regardless of where they are in that journey.
 We invite you to join us in our <em>living room</em> any given Sunday
 at 10 AM and hope that you too will feel like you belong.
 
-We also have virtual services available via our Live Stream. Which you can [access here](https://www.youtube.com/playlist?list=PLz9Hqclf7uHKxYAtFPKkzI_tIfmETK13O).
+We also have virtual services available via our Live Stream, which you can [access on YouTube here](https://www.youtube.com/playlist?list=PLz9Hqclf7uHKxYAtFPKkzI_tIfmETK13O).
