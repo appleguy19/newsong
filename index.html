@@ -1,12 +1,14 @@
 ---
 layout: default
+alert: false
 ---
 
 <section
   class="hero is-dark is-fullheight has-text-centered has-bg-image has-bg-image--fixed splash"
   style=""
 >
-  {% include nav.html %} {% include notification.html %}
+  {% include nav.html %} {% if page.alert %}{% include notification.html %}{%
+  endif %}
   <div class="hero-body splash-body">
     <div class="container is-widescreen">
       <img
