@@ -12,31 +12,27 @@ When we put into words what we believe about God, we discover that God has been 
 
 We believe the story of God follows this basic narrative:
 
->In the beginning God created all things good. He was and always will be in a communal relationship with Himself—Father, Son, and Holy Spirit. God created us to be relational as well and marked us with an identity as His image bearers. God created humans in His image to live in fellowship with Him, one another, our inner self, and creation.
+> In the beginning God created all things good. He was and always will be in a communal relationship with Himself—Father, Son, and Holy Spirit. God created us to be relational as well and marked us with an identity as His image bearers. God created humans in His image to live in fellowship with Him, one another, our inner self, and creation.
 >
->The enemy tempted the first humans, Adam and Eve, and as they chose to disobey God, darkness and evil entered the story through human sin and are now a part of the world. This devastating event resulted in our relationships with God, others, within ourselves, and creation being fractured and in desperate need of redemption.
+> The enemy tempted the first humans, Adam and Eve, and as they chose to disobey God, darkness and evil entered the story through human sin and are now a part of the world. This devastating event resulted in our relationships with God, others, within ourselves, and creation being fractured and in desperate need of redemption.
 >
->We believe God did not abandon His dream for His creation; rather He promised to restore this broken world. This restoration began with His Son, Jesus the Messiah, conceived by the Holy Spirit and born of a virgin, mysteriously God having become flesh.
+> We believe God did not abandon His dream for His creation; rather He promised to restore this broken world. This restoration began with His Son, Jesus the Messiah, conceived by the Holy Spirit and born of a virgin, mysteriously God having become flesh.
 >
->Jesus came to preach good news to the poor, bind up the brokenhearted, and set captives free, proclaiming a new arrival of the Kingdom of God and setting in motion the restoration of our fractured world.
+> Jesus came to preach good news to the poor, bind up the brokenhearted, and set captives free, proclaiming a new arrival of the Kingdom of God and setting in motion the restoration of our fractured world.
 >
->He and His message were rejected by many. Yet His path of suffering, crucifixion, death, burial, and resurrection has brought hope to all creation. Jesus is our only hope for bringing peace and reconciliation between God and humans. Through Jesus we have been forgiven and brought into right relationship with God. God is now reconciling us to each other, ourselves, and creation.
+> He and His message were rejected by many. Yet His path of suffering, crucifixion, death, burial, and resurrection has brought hope to all creation. Jesus is our only hope for bringing peace and reconciliation between God and humans. Through Jesus we have been forgiven and brought into right relationship with God. God is now reconciling us to each other, ourselves, and creation.
 >
->The Spirit of God affirms all those who trust Jesus as children of God. The Spirit empowers us with gifts and convicts, guides, comforts, counsels, and leads us into truth through a life of devotion and growth in the way of Jesus.
+> The Spirit of God affirms all those who trust Jesus as children of God. The Spirit empowers us with gifts and convicts, guides, comforts, counsels, and leads us into truth through a life of devotion and growth in the way of Jesus.
 >
->The church is rooted and grounded in Christ, led by His Spirit, practicing spiritual disciplines and celebrating baptism and the Lord’s Supper. The church is the local and global expression of living out the way of Jesus as we embody the resurrected Christ, who lives in and through us, and participate with Him in the restoration of a broken and hurting world.
+> The church is rooted and grounded in Christ, led by His Spirit, practicing spiritual disciplines and celebrating baptism and the Lord’s Supper. The church is the local and global expression of living out the way of Jesus as we embody the resurrected Christ, who lives in and through us, and participate with Him in the restoration of a broken and hurting world.
 >
->We believe the day is coming when Jesus will return to judge the world, bringing an end to injustice and restoring all things to God’s original intent. God will reclaim and renew this world and rule forever. The earth’s groaning will cease, and God will dwell with us here in a restored creation.
+> We believe the day is coming when Jesus will return to judge the world, bringing an end to injustice and restoring all things to God’s original intent. God will reclaim and renew this world and rule forever. The earth’s groaning will cease, and God will dwell with us here in a restored creation.
 
-We believe that, as a community and as individuals, God is calling us to participate in His  great unfolding story of rescue, redemption, reconciliation, and restoration. Our Kingdom theology embeds our beliefs in the context of here and now, perpetually inspiring our community to participate in what God is doing in our world.
+We believe that, as a community and as individuals, God is calling us to participate in His great unfolding story of rescue, redemption, reconciliation, and restoration. Our Kingdom theology embeds our beliefs in the context of here and now, perpetually inspiring our community to participate in what God is doing in our world.
 
 ## The Essentials
 
-In the words of Augustine, we hold to the philosophy, “In our essential beliefs, we have unity. In non-essential beliefs, we have liberty. In all beliefs we show charity.”
-
-**We believe the Bible** was written by people guided by God’s Spirit for all generations and affirm what it
-says it is: authoritative, inspired, illumined by the Spirit and useful for teaching, correcting, and wisdom.
-(Psalm 119:105-112; John 16:12-14; 17:17; 2 Timothy 3:16-17)
+In the words of Augustine, we hold to the philosophy, "In our essential beliefs we have unity. In nonessential beliefs, we have liberty. In all beliefs we show charity."
 
 **We believe in the one true Creator God** who shows Himself through self-giving love in a communal
 relationship of oneness displayed in three persons: Father, Son, and Holy Spirit.
@@ -74,6 +70,10 @@ practices, which bring glory to God’s name and help fulfill His purposes in th
 disciples and to proclaim (through word and action) the good news of forgiveness, reconciliation, and
 restoration available to all through Him.
 (Matthew 22:36-40; 28:19-20; John 20:21-23; 2 Corinthians 5:16-21)
+
+**We believe the Bible** was written by people guided by God’s Spirit for all generations and affirm what it
+says it is: authoritative, inspired, illumined by the Spirit and useful for teaching, correcting, and wisdom.
+(Psalm 119:105-112; John 16:12-14; 17:17; 2 Timothy 3:16-17)
 
 **We believe Jesus will return** to judge the world, bringing an end to injustice and restoring all things to
 God’s original intent. God will reclaim this world and rule forever. Our relationships with God, others,
