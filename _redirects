@@ -1,6 +1,7 @@
 # Redirects from what the browser requests to what we serve
 # For the podcast switch
-/podcast.xml         https://d3sg6k3rrqaech.cloudfront.net/sunday-podcast.xml              301
+# commenting out the line below due to a quick and unexpected DNS change
+# /podcast.xml         https://d3sg6k3rrqaech.cloudfront.net/sunday-podcast.xml              301
 
 # To handle old site traffic
 home/Welcome.html    /    301
