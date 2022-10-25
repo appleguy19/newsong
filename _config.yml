@@ -20,6 +20,7 @@ email:    webmaster@newsong-fellowship.com
 github_username:    appleguy19
 
 # Build settings
+include: _redirects
 markdown:    kramdown
 kramdown:
   input: GFM
