@@ -38,7 +38,7 @@ Everything you need to build this site can be done with Yarn Scripts and bundler
 
 0. Compile and begin watching Sass/SCSS: `yarn run css-watch`
 
-1. To build for production: `yarn run css-build && bundle exec jekyll build`
+1. To build for local testing: `yarn run css-build && bundle exec jekyll serve`
 
 ### Deploying this website
 
@@ -46,11 +46,9 @@ Everything you need to build this site can be done with Yarn Scripts and bundler
 
 1. Commit changes to that branch.
 
-2. Create a Pull Request (into `master`). Remember to reference a Github Issue if there is one.
+2. Create a Pull Request (into `master`). Remember to reference a Github Issue if there is one. The PR will get a staging branch on Netlify automatically. You can use this for testing.
 
-3. Merge into `master`.
-
-4. The site will be automatically deployed via [Netlify](https://netlify.com) to https://newsong.netlify.com _and very soon to the actual public URL_
+3. Once the PR is merged into `master` the site will be automatically deployed via [Netlify](https://netlify.com) to https://newsong-fellowship.com
 
 #### Git Hooks
 
