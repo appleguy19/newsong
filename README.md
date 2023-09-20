@@ -58,3 +58,12 @@ It is very helpful to have a [pre-commit hook to optimize images](https://nchris
 images=$(git diff --exit-code --cached --name-only --diff-filter=ACM -- '*.png' '*.jpg')
 $(exit $?) || (echo "$images" | imageoptim -a && git add $images)
 ```
+
+I don't yet have a pre-commit hook to automatically optimize PDF files though. Until then, you'll need to have [Ghostscript]() installed (`brew install ghostscript`). Then you can `cd` to the repo with the PDFs and run the following command.
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+-dNOPAUSE -dBATCH -dColorImageResolution=150 \
+-sOutputFile=output.pdf input.pdf
+```
+Note: there is probably a better command, but I found this one [here](https://opensource.com/article/20/8/reduce-pdf) and it seemed to work fine. 
