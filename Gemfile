@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby RUBY_VERSION
+ruby "3.3.6"
 gem 'github-pages'
 gem "webrick", "~> 1.7"
 
