@@ -13,13 +13,13 @@ groups:
         url: /our-team.html
   - title: Connect
     pages:
+      - title: Calendar
+        url: https://newsongfellowship.churchcenter.com/calendar?view=list
       - title: Sensory City
         url: /sensory-city.html
       - title: Next Steps
         url: /next-steps.html
       - title: LifeGroups
         url: /lifegroups.html
-      - title: Past Sermons
-        url: /past-sermons.html
       - title: Give
         url: /giving.html
