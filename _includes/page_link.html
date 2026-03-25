@@ -5,11 +5,37 @@
     {% when "custom-embed" %}
       <a href="{{ item.link }}" class="tile-button has-iframe-image is-square-tablet">
         <div class="tile-button-inner">
-          <iframe title="Current Series Image" src="https://subsplash.com/+f947/embed/mi/*?video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+           <img id="yt-thumb" src="" alt="Latest YouTube video" style="width: 100%; position: absolute; display: none;" />
           <div class="tile-button-iframe-cover"></div>
           <div class="button is-light is-outlined is-medium has-text-weight-bold">{{ item.title }}</div>
         </div>
       </a>
+      {% raw %}
+        <script>
+          (function () {
+            const PLAYLIST_ID = "PLz9Hqclf7uHKxYAtFPKkzI_tIfmETK13O";
+            const RSS_URL = `https://www.youtube.com/feeds/videos.xml?playlist_id=${PLAYLIST_ID}`;
+            const CORS_PROXY = "https://api.allorigins.win/get?url=";
+
+            fetch(CORS_PROXY + encodeURIComponent(RSS_URL))
+              .then(res => res.json())
+              .then(data => {
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(data.contents, "text/xml");
+                const firstEntry = xml.querySelector("entry");
+                const videoId = firstEntry.querySelector("videoId").textContent;
+                const title = firstEntry.querySelector("title").textContent;
+
+                const thumb = document.getElementById("yt-thumb");
+
+                thumb.src = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+                thumb.alt = title;
+                thumb.style.display = "block";
+              })
+              .catch(err => console.error("Failed to load YouTube feed:", err));
+          })();
+        </script>
+      {% endraw %}
     {% when "solid-black" %}
       <a href="{{ item.link }}" class="tile-button has-two-line-button is-black is-square-tablet">
         <div class="tile-button-inner">
@@ -24,3 +50,14 @@
       </a>
   {% endcase %}
 {% endfor %}
+
+
+
+<!-- _includes/youtube-latest-thumbnail.html -->
+{% raw %}
+<div id="yt-latest" style="max-width: 560px;">
+   
+  </a>
+</div>
+
+{% endraw %}
