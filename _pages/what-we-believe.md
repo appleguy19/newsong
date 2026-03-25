@@ -3,9 +3,9 @@ layout: page
 title: What We Believe
 permalink: /what-we-believe.html
 image: /public/img/living-room-lindsey-preaching.jpg
-left_link: /our-services.html
-middle_link: /current-series.html
-right_link: /past-sermons.html
+left_link: /our-team.html
+middle_link: /love-wins.html
+right_link: /current-series.html
 ---
 
 When we put into words what we believe about God, we discover that God has been writing a story of hope and redemption for the whole world. This story is a movement from creation to new creation, and God has given us a role to play in that story through the restoration of our relationships with God, each other, within ourselves, and in creation.

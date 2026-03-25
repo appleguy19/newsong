@@ -3,9 +3,9 @@ layout: page
 title: Current Series
 permalink: /current-series.html
 subsplash-embed: true
-left_link: /our-services.html
-middle_link: /what-we-believe.html
-right_link: /past-sermons.html
+left_link: /what-to-expect.html
+middle_link: /our-services.html
+right_link: /what-we-believe.html
 --- 
 <div class="video-container">
     <iframe

@@ -5,7 +5,7 @@ permalink: /our-services.html
 image: /public/img/living-room-worship.jpg
 left_link: /what-to-expect.html
 middle_link: /current-series.html
-right_link: /past-sermons.html
+right_link: /sensory-city.html
 ---
 
 One of the greatest compliments we receive is when someone tells us
